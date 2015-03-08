@@ -1,10 +1,7 @@
-# WordPress Starter Theme
+# F&Brkfst.fr wordpress theme
 
+Thanks to the [WordPress Starter Theme](https://github.com/mattbanks/WordPress-Starter-Theme) by Matt Banks ( [@mattbanks](http://twitter.com/mattbanks) / [collectivthkg.com](http://collectivthkg.com) / [mattbanks.me](http://www.mattbanks.me) )
 Version: 4.2.1
-
-### Author of the startup kit:
-
-Matt Banks ( [@mattbanks](http://twitter.com/mattbanks) / [collectivthkg.com](http://collectivthkg.com) / [mattbanks.me](http://www.mattbanks.me) )
 
 ## Bits I'm keeping of the initial README
 
