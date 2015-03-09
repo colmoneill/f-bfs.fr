@@ -1,10 +1,8 @@
 /*!
-Theme Name: WordPress Starter Theme
-Theme URI: http://www.THEME.com
-Author: Matt Banks
-Author URI: http://mattbanks.me
-Description: WordPress Starter Theme for use as a starting template for building custom themes.
-Version: 1.0
+Theme Name: f&brfst
+Theme URI: https://github.com/colmoneill/f-bfs.fr
+Author: colmoneill
+Author URI: http://colm.be
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _mbbasetheme
@@ -26,11 +24,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 // Globals
 @import "partials/h5bp-global";
-@import "partials/general";
-@import "partials/grid";
 
 // Layout
-@import "partials/layout";
 @import "partials/header";
 @import "partials/footer";
 
@@ -43,7 +38,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "partials/page-blog";
 
 // Widgets, Search, Comments, Forms, Sharing
-@import "partials/widgets";
 @import "partials/comments";
 @import "partials/forms";
 
