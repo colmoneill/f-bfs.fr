@@ -1,3 +1,85 @@
-body{
-	font-family: $Worksans-reg;
+@font-face {
+    font-family: 'work_sanssemibold';
+    src: url('assets/fonts/WorkSans-SemiBold-webfont.eot');
+    src: url('assets/fonts/WorkSans-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/WorkSans-SemiBold-webfont.woff2') format('woff2'),
+         url('assets/fonts/WorkSans-SemiBold-webfont.woff') format('woff'),
+         url('assets/fonts/WorkSans-SemiBold-webfont.ttf') format('truetype'),
+         url('assets/fonts/WorkSans-SemiBold-webfont.svg#work_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'work_sansregular';
+    src: url('assets/fonts/WorkSans-Regular-webfont.eot');
+    src: url('assets/fonts/WorkSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/WorkSans-Regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/WorkSans-Regular-webfont.woff') format('woff'),
+         url('assets/fonts/WorkSans-Regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/WorkSans-Regular-webfont.svg#work_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neutonregular';
+    src: url('assets/fonts/Neuton-Regular-webfont.eot');
+    src: url('assets/fonts/Neuton-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Neuton-Regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/Neuton-Regular-webfont.woff') format('woff'),
+         url('assets/fonts/Neuton-Regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/Neuton-Regular-webfont.svg#neutonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neutonitalic';
+    src: url('assets/fonts/Neuton-Italic-webfont.eot');
+    src: url('assets/fonts/Neuton-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Neuton-Italic-webfont.woff2') format('woff2'),
+         url('assets/fonts/Neuton-Italic-webfont.woff') format('woff'),
+         url('assets/fonts/Neuton-Italic-webfont.ttf') format('truetype'),
+         url('assets/fonts/Neuton-Italic-webfont.svg#neutonitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neutonbold';
+    src: url('assets/fonts/Neuton-Bold-webfont.eot');
+    src: url('assets/fonts/Neuton-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Neuton-Bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/Neuton-Bold-webfont.woff') format('woff'),
+         url('assets/fonts/Neuton-Bold-webfont.ttf') format('truetype'),
+         url('assets/fonts/Neuton-Bold-webfont.svg#neutonbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$worksansbold: work_sanssemibold;
+$worksans: work_sansregular;
+$neuton: neutonregular;
+$neutonitalic: neutonitalic;
+$neutonbold: neutonbold;
+
+html{
+	font-family: $worksans;
+}
+
+div.entry-content{
+	font-family: $neuton;
+	width: 60%;
+	margin: 0 auto;
+}
+
+h1.entry-title{
+	text-transform: uppercase;
+	text-align: center;
 }
