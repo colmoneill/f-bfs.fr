@@ -5,6 +5,24 @@
 // Font Face
 // @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
 
+@font-face {
+    font-family: InknutAntiqua;
+    src: url("assets/fonts/InknutAntiqua-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url("assets/fonts/WorkSans-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$Inknut-reg: InknutAntiqua;
+$Worksans-reg: WorkSans;
+
 // Structure
 $pageWidth: 1000px;
 

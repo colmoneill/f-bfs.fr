@@ -2,6 +2,7 @@
    Menus
    ========================================================================== */
 
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -20,9 +21,20 @@
 	position: relative;
 }
 
+.main-navigation li:nth-last-of-type(1) {
+	float: right;
+}
+
+.main-navigation li:nth-last-of-type(2) {
+	float: right;
+}
+
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-family: $Inknut-reg;
+	color: red;
 }
 
 .main-navigation ul ul {

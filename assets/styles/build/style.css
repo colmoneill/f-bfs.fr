@@ -38,6 +38,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* ==========================================================================
    Variables
    ========================================================================== */
+@font-face {
+  font-family: InknutAntiqua;
+  src: url("assets/fonts/InknutAntiqua-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: WorkSans;
+  src: url("assets/fonts/WorkSans-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -517,6 +529,10 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  font-family: WorkSans;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -537,7 +553,6 @@ ul#menu-principal li {
    ========================================================================== */
 .site-footer {
   text-align: center;
-  bottom: 5px;
 }
 
 /* ==========================================================================
@@ -561,9 +576,19 @@ ul#menu-principal li {
   position: relative;
 }
 
+.main-navigation li:nth-last-of-type(1) {
+  float: right;
+}
+
+.main-navigation li:nth-last-of-type(2) {
+  float: right;
+}
+
 .main-navigation a {
   display: block;
   text-decoration: none;
+  font-family: InknutAntiqua;
+  color: red;
 }
 
 .main-navigation ul ul {
@@ -709,6 +734,11 @@ object {
 /* ==========================================================================
    Home Page Template
    ========================================================================== */
+body.home {
+  margin-top: 50px;
+  font-family: WorkSans;
+}
+
 /* ==========================================================================
    Blog pages
    ========================================================================== */
