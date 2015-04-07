@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: f&brfst
 Theme URI: https://github.com/colmoneill/f-bfs.fr
@@ -574,9 +575,24 @@ ul#menu-principal li {
 /* ==========================================================================
    Footer
    ========================================================================== */
+footer {
+  text-align: center;
+}
+
 .site-footer {
+  margin-top: 200px;
   text-align: center;
   font-family: work_sansregular;
+}
+
+span.edit-link {
+  margin: 0 auto;
+  font-family: work_sansregular;
+  border-bottom: 1px dotted grey;
+}
+
+span.edit-link:after {
+  content: ' (for logged in users only)';
 }
 
 /* ==========================================================================
@@ -586,10 +602,9 @@ ul#menu-principal li {
   clear: both;
   float: left;
   width: 100%;
-  height: 200px;
+  height: 100px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  margin-top: -25px;
   border-bottom: 1px solid grey;
 }
 
@@ -615,17 +630,18 @@ ul#menu-principal li {
 .main-navigation a {
   display: block;
   text-decoration: none;
-  font-family: work_sanssemibold;
+  font-family: work_sansregular;
   color: black;
   text-transform: uppercase;
 }
 
 .main-navigation li:first-of-type {
-  height: 200px;
-  background-image: url("assets/img/banner.png");
+  height: 100px;
+  background-image: url("assets/img/logo_fab.png");
+  background-position: center bottom;
+  background-size: cover;
   background-color: blue;
   border: none;
-  visibility: hidden;
 }
 
 .main-navigation li:nth-of-type(2) {
@@ -633,12 +649,24 @@ ul#menu-principal li {
   padding-bottom: 10px;
 }
 
+.main-navigation li:nth-of-type(2):after {
+  content: '—';
+}
+
 .main-navigation li:nth-of-type(3) {
   padding-bottom: 10px;
 }
 
+.main-navigation li:nth-of-type(3):after {
+  content: '—';
+}
+
 .main-navigation li:nth-of-type(4) {
   padding-bottom: 10px;
+}
+
+.main-navigation li:nth-of-type(4):after {
+  content: '—';
 }
 
 .main-navigation li:nth-of-type(5) {
@@ -707,117 +735,65 @@ ul#menu-principal li {
 }
 
 /* ==========================================================================
-   Posts and pages
-   ========================================================================== */
-.hentry {
-  margin: 0 0 1.5em;
-}
-
-.byline,
-.updated {
-  display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-  display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-
-.page-content img.wp-smiley,
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-}
-
-.wp-caption {
-  border: 1px solid #ccc;
-  margin-bottom: 1.5em;
-  max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin: 1.2% auto 0;
-  max-width: 98%;
-}
-
-.wp-caption-text {
-  text-align: center;
-}
-
-.wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
-}
-
-.site-main .gallery {
-  margin-bottom: 1.5em;
-}
-
-.site-main .gallery a img {
-  border: none;
-  height: auto;
-  max-width: 90%;
-}
-
-.site-main .gallery dd,
-.site-main .gallery figcaption {
-  margin: 0;
-}
-
-/* Make sure embeds and iframes fit their containers */
-embed,
-iframe,
-object {
-  max-width: 100%;
-}
-
-/* ==========================================================================
    Home Page Template
    ========================================================================== */
-body.home {
-  margin-top: 50px;
-  font-family: WorkSans;
-}
-
 /* ==========================================================================
    Blog pages
    ========================================================================== */
+/* ==========================================================================
+   Posts and pages
+   ========================================================================== */
+div.entry-content {
+  width: 50%;
+  margin: 0 auto;
+}
+div.entry-content hr {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+div.entry-content p {
+  width: 70%;
+  margin: 0 auto;
+}
+
 html {
   font-family: work_sansregular;
 }
 
 body {
   font-family: work_sansregular;
+  font-size: 20px;
 }
 
 h1 h2 h3 h4 h5 h6 {
   font-family: work_sansregular;
 }
 
-div.entry-content {
-  font-family: neutonregular;
-  width: 60%;
-  margin: 0 auto;
-}
-
 h1.entry-title {
   text-transform: uppercase;
   text-align: center;
   font-family: work_sansregular;
+}
+
+div.entry-content {
+  font-family: neutonregular;
+}
+div.entry-content h2 {
+  font-family: work_sansregular;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+}
+div.entry-content h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+div.entry-content p {
+  font-size: 20px;
 }
 
 /* ==========================================================================

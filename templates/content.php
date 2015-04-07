@@ -14,6 +14,8 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				<img src="<?php the_field('featured_full_width_image'); ?>" />
+
 				<?php get_template_part( 'content', 'page' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
