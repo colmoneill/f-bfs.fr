@@ -16,8 +16,19 @@ body.blog {
    Posts and pages
    ========================================================================== */
 
-div.entry-content{
+div#primary{
+}
+
+article{
+	z-index: 2;
 	width: 50%;
+	float: left;
+	margin-left: 25%;
+	clear: right;
+
+}
+
+div.entry-content{
 	margin: 0 auto;
 	hr{
 	width: 30%;
@@ -28,4 +39,30 @@ div.entry-content{
 	width: 70%;
 	margin: 0 auto;
 	}
+}
+
+div.hero-container{
+	width: 100%;
+	z-index: -1;
+	img.hero{
+		width: 100%;
+		height: auto;
+		background-size: cover;
+	}
+}
+
+div.article-sidematter{
+	z-index: 2;
+}
+
+
+/* ==========================================================================
+   Side bar
+   ========================================================================== */
+
+div#sidematter{
+	width: 20%;
+	float: left;
+	position: relative;
+	margin-left: -90px;
 }

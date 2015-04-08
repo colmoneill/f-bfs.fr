@@ -576,16 +576,19 @@ ul#menu-principal li {
    Footer
    ========================================================================== */
 footer {
+  width: 20%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .site-footer {
-  margin-top: 200px;
   text-align: center;
   font-family: work_sansregular;
+  clear: both;
 }
 
 span.edit-link {
+  visibility: hidden;
   margin: 0 auto;
   font-family: work_sansregular;
   border-bottom: 1px dotted grey;
@@ -743,8 +746,15 @@ span.edit-link:after {
 /* ==========================================================================
    Posts and pages
    ========================================================================== */
-div.entry-content {
+article {
+  z-index: 2;
   width: 50%;
+  float: left;
+  margin-left: 25%;
+  clear: right;
+}
+
+div.entry-content {
   margin: 0 auto;
 }
 div.entry-content hr {
@@ -755,6 +765,30 @@ div.entry-content hr {
 div.entry-content p {
   width: 70%;
   margin: 0 auto;
+}
+
+div.hero-container {
+  width: 100%;
+  z-index: -1;
+}
+div.hero-container img.hero {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+div.article-sidematter {
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Side bar
+   ========================================================================== */
+div#sidematter {
+  width: 20%;
+  float: left;
+  position: relative;
+  margin-left: -90px;
 }
 
 html {
@@ -794,6 +828,14 @@ div.entry-content h3 {
 }
 div.entry-content p {
   font-size: 20px;
+}
+
+div.side-matter.side-matter-text {
+  font-family: neutonitalic;
+  font-size: 14px;
+}
+div.side-matter.side-matter-text li.side-matter-note {
+  font-size: 6px !important;
 }
 
 /* ==========================================================================

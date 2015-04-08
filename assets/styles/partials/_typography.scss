@@ -34,5 +34,16 @@ div.entry-content{
 	}
 	p{
 		font-size: $bru;
+		//text-indent: 30px;
+	}
+}
+
+div.side-matter.side-matter-text{
+	font-family: $neutonitalic;
+	font-size: 14px;
+	ol.side-matter.side-matter-list{
+	}
+	li.side-matter-note{
+		font-size: 6px !important;
 	}
 }
