@@ -32,7 +32,6 @@
 	border-left: 1px solid grey;
 }
 
-
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -42,12 +41,14 @@
 }
 
 .main-navigation li:first-of-type {
+	background-image: url('assets/img/fblogovert.png');
+	background-size: 35%;
+	background-position: right;
+	background-repeat: no-repeat;
 	height: 100px;
-	background-image: url('assets/img/logo_fab.png');
-	background-position: center bottom;
-	background-size: cover;
-	background-color: blue;
-	border: none;
+	a{
+		visibility: hidden;
+	}
 }
 
 .main-navigation li:nth-of-type(2) {
