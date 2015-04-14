@@ -46,6 +46,7 @@
 					<li>Graphisme: <a href="http://alicedc.fr/">Alice Dillon Corneck</a></li>
 					</ul>
 				</div>
+				<ul><?php pll_the_languages();?></ul>
 			</div>
 			<p class="copyright"><?php echo date( "Y" ); echo "&nbsp; Fred & breakfast"; ?></p>
 		</div><!-- .site-info -->
