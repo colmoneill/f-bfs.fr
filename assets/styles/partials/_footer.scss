@@ -3,7 +3,7 @@
    ========================================================================== */
 
 footer{
-	width: 20%;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: $bru*2;
@@ -11,9 +11,28 @@ footer{
 
 
 .site-footer {
+	color: white;
+	background-color: lightblue;
 	text-align: center;
 	font-family: $worksans;
 	clear: both;
+	p.copyright{
+		clear: both;
+		margin-bottom: 0;
+		padding-bottom: $bru*4;
+	}
+}
+
+div.columns{
+	padding-top: $bru;
+	.oneoffour{
+		width: 20%;
+		margin-left: 4%;
+		float: left;
+		padding-bottom: $bru*4;
+		padding-top: $bru*2;
+		text-align: left;
+	}
 }
 
 span.edit-link{
@@ -24,5 +43,5 @@ span.edit-link{
 }
 
 span.edit-link:after{
-content: ' (for logged in users only)';
+	content: ' (for logged in users only)';
 }
