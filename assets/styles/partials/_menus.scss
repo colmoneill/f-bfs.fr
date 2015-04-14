@@ -2,15 +2,19 @@
    Menus
    ========================================================================== */
 
+.site-title {
+	visibility: hidden;
+	height: 0;
+}
 
 .main-navigation {
 	clear: both;
 	float: left;
 	width: 100%;
 	height: 100px;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid grey;
+	padding-bottom: $bru;
+	padding-top: $bru*2;
+	margin-bottom: $bru/2;
 }
 
 .main-navigation ul {
@@ -38,11 +42,13 @@
 	font-family: $worksans;
 	color: black;
 	text-transform: uppercase;
+	font-size: 16px;
 }
 
 .main-navigation li:first-of-type {
+	margin-top: -10px;
 	background-image: url('assets/img/fblogovert.png');
-	background-size: 35%;
+	background-size: 40%;
 	background-position: right;
 	background-repeat: no-repeat;
 	height: 100px;
@@ -53,14 +59,14 @@
 
 .main-navigation li:nth-of-type(2) {
 	border: none;
-	padding-bottom: 10px;
+	padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(2):after {
 	content: '—';
 }
 .main-navigation li:nth-of-type(3) {
-	padding-bottom: 10px;
+	padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(3):after {
@@ -68,7 +74,7 @@
 }
 
 .main-navigation li:nth-of-type(4) {
-	padding-bottom: 10px;
+	padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(4):after {
@@ -128,7 +134,31 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1220px) {
+	.main-navigation li {
+		width: 20%;
+		float: left;
+		padding-top: 0px;
+		padding-right:  0px;
+		padding-left: 20px;
+		border-left: 1px solid grey;
+	}
+
+	.main-navigation li:first-of-type {
+		margin-top: -10px;
+		background-image: url('assets/img/fblogovert.png');
+		background-size: 50%;
+		background-position: right;
+		background-repeat: no-repeat;
+		height: 100px;
+		a{
+			visibility: hidden;
+		}
+	}
+
+}
+
+@media screen and (max-width: 800px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
@@ -137,6 +167,36 @@
 	.main-navigation ul {
 		display: none;
 	}
+	button.menu-toggle{
+		margin: 0 auto;
+	}
+	.site-title {
+		visibility: visible;
+		height: auto;
+		width: 40%;
+		margin: 0 auto;
+		margin-top: $bru;
+		background-image: url('assets/img/fblogovert.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		a{
+			visibility: hidden;
+		}
+	}
+
+	.main-navigation li:first-of-type {
+		display: none;
+	}
+
+	.main-navigation{
+	}
+
+	.main-navigation li {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 }
 
 .site-main .comment-navigation,

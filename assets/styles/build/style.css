@@ -565,7 +565,14 @@ textarea {
 }
 
 .site-title {
-  display: none;
+  width: 40%;
+  margin: 0 auto;
+  background-image: url("assets/img/fblogovert.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.site-title a {
+  visibility: hidden;
 }
 
 ul#menu-principal li {
@@ -579,6 +586,7 @@ footer {
   width: 20%;
   margin: 0 auto;
   text-align: center;
+  margin-top: 40px;
 }
 
 .site-footer {
@@ -601,14 +609,19 @@ span.edit-link:after {
 /* ==========================================================================
    Menus
    ========================================================================== */
+.site-title {
+  visibility: hidden;
+  height: 0;
+}
+
 .main-navigation {
   clear: both;
   float: left;
   width: 100%;
   height: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   margin-bottom: 10px;
-  border-bottom: 1px solid grey;
 }
 
 .main-navigation ul {
@@ -636,11 +649,13 @@ span.edit-link:after {
   font-family: work_sansregular;
   color: black;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .main-navigation li:first-of-type {
+  margin-top: -10px;
   background-image: url("assets/img/fblogovert.png");
-  background-size: 35%;
+  background-size: 40%;
   background-position: right;
   background-repeat: no-repeat;
   height: 100px;
@@ -651,7 +666,7 @@ span.edit-link:after {
 
 .main-navigation li:nth-of-type(2) {
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(2):after {
@@ -659,7 +674,7 @@ span.edit-link:after {
 }
 
 .main-navigation li:nth-of-type(3) {
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(3):after {
@@ -667,7 +682,7 @@ span.edit-link:after {
 }
 
 .main-navigation li:nth-of-type(4) {
-  padding-bottom: 10px;
+  padding-bottom: 3px;
 }
 
 .main-navigation li:nth-of-type(4):after {
@@ -707,7 +722,29 @@ span.edit-link:after {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1220px) {
+  .main-navigation li {
+    width: 20%;
+    float: left;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+  }
+
+  .main-navigation li:first-of-type {
+    margin-top: -10px;
+    background-image: url("assets/img/fblogovert.png");
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100px;
+  }
+  .main-navigation li:first-of-type a {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 800px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
@@ -715,6 +752,34 @@ span.edit-link:after {
 
   .main-navigation ul {
     display: none;
+  }
+
+  button.menu-toggle {
+    margin: 0 auto;
+  }
+
+  .site-title {
+    visibility: visible;
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url("assets/img/fblogovert.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .site-title a {
+    visibility: hidden;
+  }
+
+  .main-navigation li:first-of-type {
+    display: none;
+  }
+
+  .main-navigation li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .site-main .comment-navigation,
@@ -771,11 +836,13 @@ div.entry-content p {
 
 div.hero-container {
   width: 100%;
+  max-height: 200px;
   z-index: -1;
+  display: none;
 }
 div.hero-container img.hero {
   width: 100%;
-  height: auto;
+  max-height: 200px;
   background-size: cover;
 }
 

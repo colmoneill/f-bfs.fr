@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="hero-container">
-				<img class="hero" src="<?php the_field('full_width_image'); ?>" />
+					<img class="hero" src="<?php the_field('full_width_image'); ?>" />
 				</div>
 				<div class="article-sidematter">
 				<?php get_template_part( 'content', 'page' ); ?>

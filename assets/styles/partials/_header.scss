@@ -11,7 +11,14 @@
 }
 
 .site-title {
-	display: none;
+	width: 40%;
+	margin: 0 auto;
+	background-image: url('assets/img/fblogovert.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	a{
+		visibility: hidden;
+	}
 }
 
 ul#menu-principal{
