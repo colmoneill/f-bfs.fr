@@ -12,6 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
+			<div class="searchform">
 			 <form action="/" method="get">
 				<fieldset>
 					<label for="search"></label>
@@ -19,12 +20,15 @@
 					<input type="image" alt="&rarr; Rechercher" src="<?php bloginfo( 'template_url' ); ?>/images/search.png" />
 				</fieldset>
 			</form>
+			</div>
 			<div class="columns">
 				<div class="oneoffour">
-					Visites dans Paris sur l'architecture
+					<ul>
+					<lh>latest post from the blog</lh>
+					</ul>
 				</div>
 				<div class="oneoffour">
-					Visites dans Paris sur l'architecture
+					<lh>Contacter Fred</lh>
 				</div>
 				<div class="oneoffour">
 					<ul>
