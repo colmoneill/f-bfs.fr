@@ -16,6 +16,11 @@ get_header(); ?>
 				<div class="hero-container">
 					<img class="hero" src="<?php the_field('full_width_image'); ?>" />
 				</div>
+
+				<div class="title">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</div>
+
 				<div class="article-sidematter">
 				<?php get_template_part( 'content', 'page' ); ?>
 

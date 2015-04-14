@@ -2,9 +2,17 @@
    Menus
    ========================================================================== */
 
+.site-description {
+	display: none;
+}
+
 .site-title {
 	visibility: hidden;
 	height: 0;
+}
+
+div.site-branding{
+	display: none;
 }
 
 .main-navigation {
@@ -184,17 +192,28 @@
 		}
 	}
 
+	.site-description {
+		display: block;
+	}
+
+
+	div.site-branding{
+		display: block;
+	}
+
 	.main-navigation li:first-of-type {
 		display: none;
 	}
 
 	.main-navigation{
+		background-color: white;
+		z-index: 5;
 	}
 
 	.main-navigation li {
 		width: 100%;
-		margin: 0 auto;
 		text-align: center;
+		padding: 0;
 	}
 
 }

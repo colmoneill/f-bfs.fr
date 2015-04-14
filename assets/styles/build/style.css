@@ -558,21 +558,7 @@ textarea {
    ========================================================================== */
 .site-header {
   margin-top: 0px;
-}
-
-.site-description {
-  display: none;
-}
-
-.site-title {
-  width: 40%;
-  margin: 0 auto;
-  background-image: url("assets/img/fblogovert.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.site-title a {
-  visibility: hidden;
+  background-image: url();
 }
 
 ul#menu-principal li {
@@ -609,9 +595,17 @@ span.edit-link:after {
 /* ==========================================================================
    Menus
    ========================================================================== */
+.site-description {
+  display: none;
+}
+
 .site-title {
   visibility: hidden;
   height: 0;
+}
+
+div.site-branding {
+  display: none;
 }
 
 .main-navigation {
@@ -772,14 +766,27 @@ span.edit-link:after {
     visibility: hidden;
   }
 
+  .site-description {
+    display: block;
+  }
+
+  div.site-branding {
+    display: block;
+  }
+
   .main-navigation li:first-of-type {
     display: none;
   }
 
+  .main-navigation {
+    background-color: white;
+    z-index: 5;
+  }
+
   .main-navigation li {
     width: 100%;
-    margin: 0 auto;
     text-align: center;
+    padding: 0;
   }
 }
 .site-main .comment-navigation,
@@ -823,6 +830,7 @@ article {
 
 div.entry-content {
   margin: 0 auto;
+  z-index: 3;
 }
 div.entry-content hr {
   width: 30%;
@@ -833,21 +841,52 @@ div.entry-content p {
   width: 70%;
   margin: 0 auto;
 }
+div.entry-content p strong {
+  font-family: work_sansregular;
+}
+div.entry-content ul {
+  width: 70%;
+  margin: 0 auto;
+  font-family: work_sansregular;
+  list-style-type: none;
+}
+div.entry-content li {
+  font-size: 16px;
+}
+div.entry-content ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+div.entry-content .master-slider-parent {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
 div.hero-container {
   width: 100%;
-  max-height: 200px;
-  z-index: -1;
-  display: none;
+  margin-bottom: -100px;
 }
 div.hero-container img.hero {
   width: 100%;
-  max-height: 200px;
-  background-size: cover;
+  max-height: 250px;
+  z-index: 0 !important;
 }
 
-div.article-sidematter {
-  z-index: 2;
+div.title {
+  background-color: white;
+  display: inline-block;
+  width: 25%;
+  margin-left: 37.5%;
+  margin-bottom: 100px;
+}
+div.title h1 {
+  font-size: 20px;
+}
+
+div.article-sidematter h1.entry-title {
+  display: none;
 }
 
 /* ==========================================================================
@@ -858,6 +897,7 @@ div#sidematter {
   float: left;
   position: relative;
   margin-left: -90px;
+  margin-top: -292px;
 }
 
 html {
