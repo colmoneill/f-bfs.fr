@@ -651,6 +651,14 @@ span.edit-link:after {
   height: 0;
 }
 
+div.languages {
+  position: absolute;
+}
+div.languages ul {
+  list-style-type: none;
+  display: inline;
+}
+
 div.site-branding {
   display: none;
 }

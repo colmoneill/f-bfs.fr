@@ -11,6 +11,16 @@
 	height: 0;
 }
 
+div.languages{
+	position: absolute;
+	ul{
+		list-style-type: none;
+		display: inline;
+		li{
+		}
+	}
+}
+
 div.site-branding{
 	display: none;
 }
