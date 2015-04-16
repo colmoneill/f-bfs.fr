@@ -653,10 +653,19 @@ span.edit-link:after {
 
 div.languages {
   position: absolute;
+  right: 15px;
 }
 div.languages ul {
   list-style-type: none;
-  display: inline;
+}
+div.languages ul li {
+  float: left;
+  padding-left: 5px;
+}
+div.languages ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
 div.site-branding {
