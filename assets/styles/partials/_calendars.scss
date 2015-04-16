@@ -1,17 +1,45 @@
+div.calendars-container{
+	width: 100%;
+	clear: both;
+	height: 800px;
+	background-color: #bdbdbd;
+}
+
 div.calendars{
 	width: 90%;
 	clear: both;
 	margin: 0 auto;
+	margin-top: $bru;
+	div.title{
+		margin-bottom: 0;
+		margin-top: $bru;
+		h1{
+			width: auto;
+		}
+	}
 	.left-calendar{
 		width: 49%;
 		margin-right: 1%;
 		clear: both;
 		float: left;
+		margin-top: $bru;
 	}
 	.right-calendar{
 		width: 49%;
 		margin-left: 1%;
 		float: right;
+		margin-top: $bru;
+	}
+	h2{
+		text-align: center;
+		padding-bottom: 2px;
+		text-decoration: underline;
+	}
+	p{
+		font-size: 14px;
+		text-align: center;
+		color: red;
+
 	}
 }
 
