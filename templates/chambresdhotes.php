@@ -32,11 +32,16 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 				</div>
 				</div>
-				<div class="calendars">
+				<div class="calendars no-detail-display">
+					<h1 class="entry-title">Reservations</h1>
 					<div class="left-calendar">
+						<h2>Studio</h2>
+						<p>1&#151;2 ppl</p>
 						<?php echo do_shortcode('[dopbsp id=1]'); ?>
 					</div>
 					<div class="right-calendar">
+						<h2>Appartement</h2>
+						<p>1&#151;4 ppl</p>
 						<?php echo do_shortcode('[dopbsp id=2]'); ?>
 					</div>
 				</div>

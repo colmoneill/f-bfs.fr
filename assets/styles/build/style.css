@@ -978,8 +978,35 @@ div#sidematter {
 div.calendars {
   width: 90%;
   clear: both;
+  margin: 0 auto;
+}
+div.calendars .left-calendar {
+  width: 49%;
+  margin-right: 1%;
+  clear: both;
+  float: left;
+}
+div.calendars .right-calendar {
+  width: 49%;
+  margin-left: 1%;
+  float: right;
 }
 
+div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  div.calendars {
+    width: 95%;
+  }
+  div.calendars .left-calendar {
+    width: 100%;
+  }
+  div.calendars .right-calendar {
+    width: 100%;
+  }
+}
 html {
   font-family: work_sansregular;
 }
