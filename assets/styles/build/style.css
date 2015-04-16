@@ -995,17 +995,20 @@ div.calendars div.title h1 {
   width: auto;
 }
 div.calendars .left-calendar {
-  width: 49%;
-  margin-right: 1%;
+  width: 48%;
+  padding-right: 2%;
   clear: both;
   float: left;
   margin-top: 20px;
+  border-right: 1px solid black;
 }
 div.calendars .right-calendar {
-  width: 49%;
-  margin-left: 1%;
+  width: 48%;
   float: right;
   margin-top: 20px;
+}
+div.calendars .center-calendar {
+  border-bottom: 1px solid black;
 }
 div.calendars h2 {
   text-align: center;

@@ -33,6 +33,10 @@ get_header(); ?>
 				</div>
 				</div>
 					<div class="calendars">
+						<div class="center-calendar">
+							<h2>Cuisine</h2>
+							<?php echo do_shortcode('[dopbsp id=3]'); ?>
+						</div>
 						<div class="left-calendar">
 							<h2>Studio</h2>
 							<p>1&#151;2 ppl</p>

@@ -18,17 +18,20 @@ div.calendars{
 		}
 	}
 	.left-calendar{
-		width: 49%;
-		margin-right: 1%;
+		width: 48%;
+		padding-right: 2%;
 		clear: both;
 		float: left;
 		margin-top: $bru;
+		border-right: 1px solid black;
 	}
 	.right-calendar{
-		width: 49%;
-		margin-left: 1%;
+		width: 48%;
 		float: right;
 		margin-top: $bru;
+	}
+	.center-calendar{
+		border-bottom: 1px solid black;
 	}
 	h2{
 		text-align: center;
