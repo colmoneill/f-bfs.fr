@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Chambres d'hôtes
+ * Template Name: Reservations
  *
- * Displays content for content page layouts
+ * For reservation page, of course.
  *
  * @package _mbbasetheme
  */
@@ -32,25 +32,18 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>
 				</div>
 				</div>
-				<div class="calendars-container">
-					<div class="calendars no-detail-display">
-						<div class="title">
-							<h1 class="entry-title">Reservations</h1>
-						</div>
+					<div class="calendars">
 						<div class="left-calendar">
 							<h2>Studio</h2>
 							<p>1&#151;2 ppl</p>
 							<?php echo do_shortcode('[dopbsp id=1]'); ?>
-							<a class="reservation-button" href="#">make a reservation</a>
 						</div>
 						<div class="right-calendar">
 							<h2>Appartement</h2>
 							<p>1&#151;4 ppl</p>
 							<?php echo do_shortcode('[dopbsp id=2]'); ?>
-							<a class="reservation-button" href="#">make a reservation</a>
 						</div>
 					</div>
-				</div>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
