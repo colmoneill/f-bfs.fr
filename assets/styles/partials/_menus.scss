@@ -28,6 +28,20 @@ div.languages{
 	}
 }
 
+header.site-header{
+	hr{
+		color: black;
+		background-color: black;
+		border: none;
+		height: 1px;
+		clear: both;
+		margin-top: -$bru*2;
+		width: 78%;
+		margin: 0 auto;
+		margin-bottom: $bru*2;
+	}
+}
+
 div.site-branding{
 	display: none;
 }
@@ -39,7 +53,6 @@ div.site-branding{
 	height: 100px;
 	padding-bottom: $bru;
 	padding-top: $bru*2;
-	margin-bottom: $bru/2;
 }
 
 .main-navigation ul {

@@ -668,6 +668,18 @@ div.languages ul a {
   font-size: 14px;
 }
 
+header.site-header hr {
+  color: black;
+  background-color: black;
+  border: none;
+  height: 1px;
+  clear: both;
+  margin-top: -40px;
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 div.site-branding {
   display: none;
 }
@@ -679,7 +691,6 @@ div.site-branding {
   height: 100px;
   padding-bottom: 20px;
   padding-top: 40px;
-  margin-bottom: 10px;
 }
 
 .main-navigation ul {
