@@ -975,6 +975,11 @@ div#sidematter {
   margin-top: -292px;
 }
 
+div.calendars {
+  width: 90%;
+  clear: both;
+}
+
 html {
   font-family: work_sansregular;
 }
