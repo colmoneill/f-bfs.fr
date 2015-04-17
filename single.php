@@ -14,6 +14,9 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
+			<div id="sidematter" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+
 			<?php _mbbasetheme_post_nav(); ?>
 
 			<?php
