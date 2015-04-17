@@ -1056,6 +1056,56 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
     border-right: none;
   }
 }
+.post-list-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.single-post-info {
+  width: 80%;
+  margin: 0 auto;
+}
+.single-post-info h1 a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+.single-post-info .post-meta {
+  margin: 0;
+  font-family: neutonregular;
+}
+.single-post-info small {
+  font-family: neutonregular;
+}
+.single-post-info small a {
+  text-decoration: none;
+  color: #008a91;
+}
+
+article.post header h1 {
+  font-size: 24px;
+}
+article.post header .entry-meta {
+  font-family: neutonregular;
+  font-size: 16px;
+  border-bottom: 1px solid #008a91;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+article.post header .entry-meta a {
+  text-decoration: none;
+  color: #008a91;
+}
+
+.post-post-nav {
+  clear: both;
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #008a91;
+  margin-top: 20px;
+}
+
 html {
   font-family: work_sansregular;
 }
