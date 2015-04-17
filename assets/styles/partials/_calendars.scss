@@ -2,7 +2,7 @@ div.calendars-container{
 	width: 100%;
 	clear: both;
 	height: 800px;
-	background-color: #bdbdbd;
+	background-color: $magenta;
 }
 
 div.calendars{
@@ -43,6 +43,11 @@ div.calendars{
 		text-align: center;
 		color: red;
 	}
+	.reserv-button{
+		width: auto;
+		margin: 0 auto;
+		text-align: center;
+	}
 	a{
 		font-size: 16px;
 		text-align: center;
@@ -60,7 +65,9 @@ div.calendars.no-detail-display{
 }
 
 @media screen and (max-width: 800px) {
-
+	div.calendars-container{
+		height: 1370px;
+	}
 	div.calendars{
 		width: 95%;
 		.left-calendar{
@@ -68,6 +75,9 @@ div.calendars.no-detail-display{
 		}
 		.right-calendar{
 			width: 100%;
+		}
+		.left-calendar{
+		border-right: none;
 		}
 	}
 }

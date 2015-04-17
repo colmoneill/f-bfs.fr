@@ -576,7 +576,7 @@ footer {
 
 .site-footer {
   color: white;
-  background-color: lightblue;
+  background-color: #8bdbd5;
   text-align: center;
   font-family: work_sansregular;
   clear: both;
@@ -591,7 +591,7 @@ footer {
 div.searchform {
   width: 100%;
   height: 150px;
-  background-color: lightgrey;
+  background-color: #f3f1f3;
 }
 div.searchform form {
   padding-top: 60px;
@@ -978,7 +978,7 @@ div.calendars-container {
   width: 100%;
   clear: both;
   height: 800px;
-  background-color: #bdbdbd;
+  background-color: #fdf0f0;
 }
 
 div.calendars {
@@ -1020,6 +1020,11 @@ div.calendars p {
   text-align: center;
   color: red;
 }
+div.calendars .reserv-button {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
 div.calendars a {
   font-size: 16px;
   text-align: center;
@@ -1034,6 +1039,10 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
 }
 
 @media screen and (max-width: 800px) {
+  div.calendars-container {
+    height: 1370px;
+  }
+
   div.calendars {
     width: 95%;
   }
@@ -1042,6 +1051,9 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
   }
   div.calendars .right-calendar {
     width: 100%;
+  }
+  div.calendars .left-calendar {
+    border-right: none;
   }
 }
 html {

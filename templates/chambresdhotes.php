@@ -41,13 +41,17 @@ get_header(); ?>
 							<h2>Studio</h2>
 							<p>1&#151;2 ppl</p>
 							<?php echo do_shortcode('[dopbsp id=1]'); ?>
-							<a class="reservation-button" href="#">make a reservation</a>
+							<div class="reserv-button">
+								<a class="reservation-button" href="#">make a reservation</a>
+							</div>
 						</div>
 						<div class="right-calendar">
 							<h2>Appartement</h2>
 							<p>1&#151;4 ppl</p>
 							<?php echo do_shortcode('[dopbsp id=2]'); ?>
-							<a class="reservation-button" href="#">make a reservation</a>
+							<div class="reserv-button">
+								<a class="reservation-button" href="#">make a reservation</a>
+							</div>
 						</div>
 					</div>
 				</div>
