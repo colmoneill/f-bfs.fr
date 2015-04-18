@@ -627,6 +627,12 @@ div.columns ul li:before {
   margin-left: -1em;
 }
 
+div.widget_recent_entries h2.widgettitle {
+  text-transform: lowercase;
+  font-size: 14px;
+  margin: 0;
+}
+
 span.edit-link {
   visibility: hidden;
   margin: 0 auto;
@@ -638,6 +644,12 @@ span.edit-link:after {
   content: ' (for logged in users only)';
 }
 
+@media screen and (max-width: 800px) {
+  div.columns .oneoffour {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 /* ==========================================================================
    Menus
    ========================================================================== */
@@ -785,6 +797,12 @@ div.site-branding {
 }
 
 /* Small menu */
+button.menu-toggle {
+  background-color: #008a91;
+  border: none;
+  padding: 10px;
+}
+
 .menu-toggle {
   cursor: pointer;
   display: none;
@@ -847,6 +865,12 @@ div.site-branding {
   div.site-branding {
     display: block;
   }
+  div.site-branding h1 {
+    height: 300px;
+  }
+  div.site-branding h2 {
+    text-align: center;
+  }
 
   .main-navigation li:first-of-type {
     display: none;
@@ -861,6 +885,48 @@ div.site-branding {
     width: 100%;
     text-align: center;
     padding: 0;
+  }
+
+  div.languages {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.languages ul li {
+    float: right;
+    background-color: grey;
+    padding: 10px;
+    margin: 5px;
+    width: 25px;
+    text-align: center;
+  }
+  div.languages .current-lang {
+    background-color: #008a91;
+  }
+
+  nav#site-navigation.toggled {
+    height: 400px;
+  }
+  nav#site-navigation.toggled div.menu-principal-container {
+    margin-top: 20px;
+  }
+
+  .main-navigation li:nth-of-type(5):after {
+    content: '—';
+  }
+
+  .main-navigation li:nth-of-type(6):after {
+    content: '—';
+  }
+}
+@media screen and (max-width: 600px) {
+  div.site-branding h1 {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div.site-branding h1 {
+    height: 150px;
   }
 }
 .site-main .comment-navigation,
@@ -1116,6 +1182,25 @@ header.search-page-header h1 {
 }
 header.search-page-header h1 span {
   font-weight: bold;
+}
+
+span.screen-reader-text {
+  display: none;
+}
+
+input.search-field {
+  border: none;
+  padding: 5px;
+  color: grey;
+}
+
+input.search-submit {
+  background-color: #008a91;
+  border: none;
+  box-shadow: none;
+  padding: 5px;
+  text-transform: lowercase;
+  color: white;
 }
 
 html {

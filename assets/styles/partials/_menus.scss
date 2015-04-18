@@ -167,6 +167,12 @@ div.site-branding{
 }
 
 /* Small menu */
+
+button.menu-toggle{
+	background-color: $petergreen;
+	border: none;
+	padding: 10px;
+}
 .menu-toggle {
 	cursor: pointer;
 	display: none;
@@ -229,6 +235,12 @@ div.site-branding{
 
 	div.site-branding{
 		display: block;
+		h1{
+			height: 300px;
+		}
+		h2{
+			text-align: center;
+		}
 	}
 
 	.main-navigation li:first-of-type {
@@ -246,8 +258,57 @@ div.site-branding{
 		padding: 0;
 	}
 
+	div.languages{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	ul li{
+		float: right;
+		background-color: grey;
+		padding: 10px;
+		margin: 5px;
+		width: 25px;
+		text-align: center;
+		}
+		.current-lang{
+			background-color: $petergreen;
+		}
+	}
+
+	nav#site-navigation.toggled{
+		height: 400px;
+		div.menu-principal-container{
+			margin-top: $bru;
+		}
+	}
+
+	.main-navigation li:nth-of-type(5):after {
+		content: '—';
+	}
+
+	.main-navigation li:nth-of-type(6):after {
+		content: '—';
+	}
+
+
 }
 
+@media screen and (max-width: 600px) {
+	div.site-branding{
+		h1{
+			height: 200px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	div.site-branding{
+		h1{
+			height: 150px;
+		}
+	}
+}
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {

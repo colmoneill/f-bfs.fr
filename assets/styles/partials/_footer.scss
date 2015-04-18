@@ -65,6 +65,15 @@ div.columns{
 	}
 }
 
+div.widget_recent_entries{
+	h2.widgettitle{
+		text-transform: lowercase;
+		font-size: 14px;
+		margin: 0;
+	}
+}
+
+
 span.edit-link{
 	visibility: hidden;
 	margin: 0 auto;
@@ -74,4 +83,13 @@ span.edit-link{
 
 span.edit-link:after{
 	content: ' (for logged in users only)';
+}
+
+@media screen and (max-width: 800px) {
+	div.columns{
+		.oneoffour{
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
 }

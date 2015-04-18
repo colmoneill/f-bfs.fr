@@ -17,9 +17,7 @@
 			</div>
 			<div class="columns">
 				<div class="oneoffour">
-					<ul>
-					<lh><?php the_widget( 'WP_Widget_Recent_Posts' ); ?></lh>
-					</ul>
+					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 				</div>
 				<div class="oneoffour">
 					<lh>Contacter Fred</lh>

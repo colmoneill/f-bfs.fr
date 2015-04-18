@@ -9,3 +9,22 @@ header.search-page-header{
 		font-weight: bold;
 	}
 }
+
+span.screen-reader-text{
+	display: none;
+}
+
+input.search-field{
+	border: none;
+	padding: 5px;
+	color: grey;
+}
+
+input.search-submit{
+	background-color: $petergreen;
+	border: none;
+	box-shadow: none;
+	padding: 5px;
+	text-transform: lowercase;
+	color: white;
+}
