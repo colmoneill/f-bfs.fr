@@ -1106,6 +1106,18 @@ article.post header .entry-meta a {
   margin-top: 20px;
 }
 
+header.search-page-header {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #008a91;
+}
+header.search-page-header h1 {
+  font-weight: normal;
+}
+header.search-page-header h1 span {
+  font-weight: bold;
+}
+
 html {
   font-family: work_sansregular;
 }

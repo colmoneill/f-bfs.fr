@@ -18,7 +18,7 @@
 			<div class="columns">
 				<div class="oneoffour">
 					<ul>
-					<lh>latest post from the blog</lh>
+					<lh><?php the_widget( 'WP_Widget_Recent_Posts' ); ?></lh>
 					</ul>
 				</div>
 				<div class="oneoffour">
