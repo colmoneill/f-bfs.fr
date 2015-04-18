@@ -13,13 +13,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="searchform">
-			 <form action="/" method="get">
-				<fieldset>
-					<label for="search"></label>
-					<input type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
-					<input type="image" alt="&rarr; Rechercher" src="<?php bloginfo( 'template_url' ); ?>/images/search.png" />
-				</fieldset>
-			</form>
+			<?php get_search_form(); ?>
 			</div>
 			<div class="columns">
 				<div class="oneoffour">
