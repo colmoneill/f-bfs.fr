@@ -305,8 +305,15 @@ button.menu-toggle{
 @media screen and (max-width: 400px){
 	div.site-branding{
 		h1{
+			clear: both;
 			height: 150px;
 		}
+	}
+	div.languages{
+	position: relative;
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
 	}
 }
 .site-main .comment-navigation,
