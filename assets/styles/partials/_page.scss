@@ -25,7 +25,6 @@ article{
 	float: left;
 	margin-left: 25%;
 	clear: right;
-
 }
 
 div.entry-content{
@@ -102,4 +101,100 @@ div#sidematter{
 	position: relative;
 	margin-left: -90px;
 	margin-top: -292px;
+}
+
+
+@media screen and (max-width: 1220px) {
+	div#sidematter{
+	}
+
+	article{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	div.entry-content{
+		hr{
+			width: 50%;
+			margin: 0 auto;
+			padding-bottom: $bru;
+		}
+		p{
+			width: 70%;
+			margin: 0 auto;
+			strong{
+				font-family: $worksans;
+			}
+		}
+		ul{
+			width: 70%;
+			margin: 0 auto;
+			font-family: $worksans;
+			list-style-type: none;
+		}
+	}
+
+	div.hero-container{
+		width: 100%;
+		margin-bottom: -100px;
+		img.hero{
+			width: 100%;
+			max-height: 250px;
+			z-index: 0 !important;
+		}
+	}
+
+	div.title{
+		background-color: white;
+		display: inline-block;
+		width: 25%;
+		margin-left: 37.5%;
+		margin-bottom: 100px;
+		h1{
+			font-size: 20px;
+		}
+	}
+
+	div.article-sidematter{
+		h1.entry-title{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	article{
+		width: 90%;
+		margin-left: 5%;
+	}
+	div.entry-content{
+		hr{
+			width: 60%;
+		}
+		p{
+			width: 100%;
+		}
+	ul{
+		width: 90%;
+		margin-left: -20px;
+	}
+	}
+	div#sidematter{
+	width: 90%;
+	margin-top: 0px;
+	margin-left: $bru*2;
+	margin: 0 auto;
+	li{
+		margin-top: 0px !important;
+	}
+	}
+	div.title{
+	background-color: white;
+	display: inline-block;
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: $bru;
+	text-align: left;
+	}
+
 }
