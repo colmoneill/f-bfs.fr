@@ -835,6 +835,9 @@ button.menu-toggle {
     background-repeat: no-repeat;
     height: 100px;
   }
+  .main-navigation li:first-of-type a {
+    text-indent: -60px;
+  }
 }
 @media screen and (max-width: 800px) {
   div.scroll-back-to-top-wrapper.show {
