@@ -835,9 +835,6 @@ button.menu-toggle {
     background-repeat: no-repeat;
     height: 100px;
   }
-  .main-navigation li:first-of-type a {
-    visibility: hidden;
-  }
 }
 @media screen and (max-width: 800px) {
   div.scroll-back-to-top-wrapper.show {
