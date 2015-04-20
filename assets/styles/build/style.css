@@ -741,7 +741,11 @@ div.site-branding {
   height: 100px;
 }
 .main-navigation li:first-of-type a {
-  visibility: hidden;
+  text-indent: -20px;
+  color: white;
+  z-index: -4;
+  height: 100px;
+  width: 100%;
 }
 
 .main-navigation li:nth-of-type(2) {
@@ -808,6 +812,11 @@ button.menu-toggle {
   display: none;
 }
 
+@media screen and (min-width: 1300px) {
+  .main-navigation li:first-of-type {
+    background-size: 30%;
+  }
+}
 @media screen and (max-width: 1220px) {
   .main-navigation li {
     width: 20%;

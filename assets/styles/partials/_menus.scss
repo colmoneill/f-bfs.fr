@@ -91,7 +91,11 @@ div.site-branding{
 	background-repeat: no-repeat;
 	height: 100px;
 	a{
-		visibility: hidden;
+		text-indent: -20px;
+		color: white;
+		z-index: -4;
+		height: 100px;
+		width: 100%;
 	}
 }
 
@@ -176,6 +180,13 @@ button.menu-toggle{
 .menu-toggle {
 	cursor: pointer;
 	display: none;
+}
+
+@media screen and (min-width: 1300px) {
+	.main-navigation li:first-of-type {
+	background-size: 30%;
+}
+
 }
 
 @media screen and (max-width: 1220px) {
