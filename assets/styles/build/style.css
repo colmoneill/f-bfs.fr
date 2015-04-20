@@ -649,10 +649,6 @@ span.edit-link:after {
     width: 90%;
     margin-left: 5%;
   }
-
-  footer.entry-content {
-    display: none;
-  }
 }
 /* ==========================================================================
    Menus
@@ -1122,7 +1118,7 @@ div#sidematter {
     width: 90%;
     margin-left: -20px;
   }
-  div.entry-content footer.entry-content {
+  div.entry-content footer.entry-footer {
     display: none;
   }
 
