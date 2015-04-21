@@ -36,7 +36,7 @@
 			<button class="menu-toggle"><?php _e( 'menu', '_mbbasetheme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
-	<hr>
+	<!--<hr>-->
 	</header><!-- #masthead -->
 
 

@@ -826,18 +826,6 @@ button.menu-toggle {
     padding-left: 20px;
     border-left: 1px solid grey;
   }
-
-  .main-navigation li:first-of-type {
-    margin-top: -10px;
-    background-image: url("assets/img/fblogovert.png");
-    background-size: 50%;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 100px;
-  }
-  .main-navigation li:first-of-type a {
-    text-indent: -60px;
-  }
 }
 @media screen and (max-width: 800px) {
   div.scroll-back-to-top-wrapper.show {
