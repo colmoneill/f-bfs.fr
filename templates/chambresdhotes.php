@@ -13,12 +13,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="hero-container">
-					<img class="hero" src="<?php the_field('full_width_image'); ?>" />
-				</div>
-
-				<div class="title">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<div class="hero-container" style="background-image: url(<?php the_field('full_width_image'); ?>) ">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
 
 				<div class="article-sidematter">
