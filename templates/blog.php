@@ -16,14 +16,18 @@ get_header(); ?>
 					<?php wp_list_categories('title_li='); ?>
 				</ul>
 			</div>
+			<h2>ARTICLES RECENTS</h2>
 		<?php $myposts = get_posts('');
 		foreach($myposts as $post) :
 		setup_postdata($post); ?>
 			<div class="post-list">
 				<div class="single-post-info">
+					<?php the_post_thumbnail(); ?><br>
+					<?php the_category('title_li='); ?>
 					<h1 class="post-title">
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 					</h1>
+					<hr>
 					<p><?php the_tags(); ?></p>
 					<!--
 					<p class="post-meta">Posted by <?php the_author(); ?></p>

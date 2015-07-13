@@ -79,3 +79,6 @@ add_filter( 'wpseo_metabox_prio', 'mb_filter_yoast_seo_metabox' );
 function mb_filter_yoast_seo_metabox() {
 	return 'low';
 }
+
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 150, 150);
