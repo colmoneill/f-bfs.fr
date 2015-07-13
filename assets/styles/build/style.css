@@ -727,9 +727,10 @@ div.site-branding {
   display: block;
   text-decoration: none;
   font-family: work_sansregular;
+  font-weight: bold;
   color: black;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .main-navigation li:first-of-type {
@@ -1042,12 +1043,20 @@ div.article-sidematter h1.entry-title {
 /* ==========================================================================
    Side bar
    ========================================================================== */
+p a.side-matter-ref sup {
+  font-size: 12px;
+  color: #edc568;
+}
+
 div#sidematter {
   width: 20%;
   float: left;
   position: relative;
   margin-left: -90px;
   margin-top: -292px;
+}
+div#sidematter ol {
+  font-family: work_sansregular;
 }
 
 @media screen and (max-width: 1220px) {
@@ -1351,11 +1360,14 @@ div.entry-content p {
 }
 
 div.side-matter.side-matter-text {
-  font-family: neutonitalic;
-  font-size: 14px;
+  font-style: italic;
+  font-size: 12px;
 }
 div.side-matter.side-matter-text li.side-matter-note {
   font-size: 6px !important;
+}
+div.side-matter.side-matter-text li.side-matter-note:before {
+  content: "\2192 \20 ";
 }
 
 @media screen and (max-width: 800px) {

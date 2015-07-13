@@ -48,12 +48,16 @@ div.entry-content{
 }
 
 div.side-matter.side-matter-text{
-	font-family: $neutonitalic;
-	font-size: 14px;
+	font-style: italic;
+	font-size: 12px;
 	ol.side-matter.side-matter-list{
 	}
 	li.side-matter-note{
 		font-size: 6px !important;
+	}
+	li.side-matter-note:before{
+		//this doenst work, I guess it's overwritten by the javascript that manages side-matter
+		content: "\2192 \20 ";
 	}
 }
 

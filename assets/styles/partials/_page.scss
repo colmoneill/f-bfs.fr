@@ -95,6 +95,14 @@ div.article-sidematter{
 /* ==========================================================================
    Side bar
    ========================================================================== */
+p{
+	a.side-matter-ref{
+		sup{
+		font-size: 12px;
+		color: #edc568;
+		}
+	}
+}
 
 div#sidematter{
 	width: 20%;
@@ -102,6 +110,9 @@ div#sidematter{
 	position: relative;
 	margin-left: -90px;
 	margin-top: -292px;
+	ol{
+		font-family: $worksans;
+	}
 }
 
 
