@@ -1235,9 +1235,32 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
   margin: 0 auto;
 }
 
+div.post_categories {
+  clear: both;
+  border-top: 1px solid #edc568;
+}
+div.post_categories ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+div.post_categories ul li {
+  display: inline-block;
+  width: 25%;
+}
+div.post_categories ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+div.post_categories ul li a::before {
+  content: '\2193 ';
+  color: #edc568;
+}
+
 .single-post-info {
-  width: 80%;
-  margin: 0 auto;
+  width: 18%;
+  margin-right: 2%;
+  float: left;
 }
 .single-post-info h1 a {
   text-decoration: none;
