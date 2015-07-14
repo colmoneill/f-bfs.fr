@@ -24,8 +24,10 @@ get_header(); ?>
 				<div class="single-post-info">
 
 					<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail('$url');
-					} else { ?>
+						$thumb_id = get_post_thumbnail_id();
+						$thumb_url = wp_get_attachment_image_src($thumb_id,'medium', true); ?>
+							<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
+						<?php } else { ?>
 						<div class="no-thumbnail"></div>
 						<?php } ?>
 					<p class="category"><?php the_category('title_li='); ?></p>
