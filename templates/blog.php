@@ -22,11 +22,12 @@ get_header(); ?>
 		setup_postdata($post); ?>
 			<div class="post-list">
 				<div class="single-post-info">
-
 					<?php if ( has_post_thumbnail() ) {
 						$thumb_id = get_post_thumbnail_id();
 						$thumb_url = wp_get_attachment_image_src($thumb_id,'medium', true); ?>
+							<a href="<?php the_permalink() ?>">
 							<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
+							</a>
 						<?php } else { ?>
 						<div class="no-thumbnail"></div>
 						<?php } ?>

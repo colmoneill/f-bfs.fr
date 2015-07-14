@@ -17,7 +17,7 @@
 			</div>
 			<div class="columns">
 				<div class="oneoffour">
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+					<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 3 )); ?>
 				</div>
 				<div class="oneoffour">
 					<lh>Contacter Fred</lh>
@@ -33,7 +33,7 @@
 				</div>
 				<div class="oneoffour">
 					<ul>
-					<lh>Mentions légales</lh>
+					<lh>Mentions</lh>
 					<li>Site web: <a href="http://colm.be">Colm O'Neill</a></li>
 					<li>Graphisme: <a href="http://alicedc.fr/">Alice Dillon Corneck</a></li>
 					</ul>

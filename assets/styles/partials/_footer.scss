@@ -19,8 +19,9 @@ footer{
 	p.copyright{
 		clear: both;
 		margin-bottom: 0;
-		padding-bottom: $bru*4;
-		font-size: 14px;
+		padding-top: $bru*4;
+		padding-bottom: $bru;
+		font-size: 10px;
 	}
 }
 
@@ -35,6 +36,8 @@ div.searchform{
 
 div.columns{
 	padding-top: $bru;
+	width: 60%;
+	margin: 0 auto;
 	.oneoffour{
 		width: 20%;
 		margin-left: 4%;

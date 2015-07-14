@@ -51,6 +51,56 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
+				<div class="rappels">
+					<div class="rappel-cuisine">
+						<?php
+						$currentlang = get_bloginfo('language');
+						if($currentlang=="en-GB"):?>
+						<h2>Cooking classes</h2>
+						<div class="rappel-cuisine-img">
+							<br><br>
+							<h3>Try out the cooking classes!</h3>
+							<h4>&rarr; read up on the types of classes</h4>
+						</div>
+						<?php else: ?>
+						<h2>Les cours de cuisine</h2>
+						<div class="rappel-cuisine-img">
+							<div class="rappel-img-inside-content">
+							<h3>Essayez les cours de cuisine!</h3>
+							<h4>&rarr; découvrir les formules</h4>
+							</div>
+						</div>
+					<?php endif; ?>
+					</div>
+					<div class="rappel-blog">
+						<?php $myposts = get_posts('posts_per_page=3');
+						foreach($myposts as $post) :
+						setup_postdata($post); ?>
+							<div class="post-list">
+								<div class="single-post-info">
+									<?php if ( has_post_thumbnail() ) {
+										$thumb_id = get_post_thumbnail_id();
+										$thumb_url = wp_get_attachment_image_src($thumb_id,'medium', true); ?>
+											<a href="<?php the_permalink() ?>">
+											<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
+											</a>
+										<?php } else { ?>
+										<div class="no-thumbnail"></div>
+										<?php } ?>
+									<p class="category"><?php the_category('title_li='); ?></p>
+									<h1 class="post-title">
+										<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+									</h1>
+									<hr>
+									<p class="tags"><?php the_tags('' , ''); ?></p>
+									<!--
+									<p class="post-meta">Posted by <?php the_author(); ?></p>
+									<small><?php _mbbasetheme_posted_on(); ?></small>
+								-->
+								</div>
+						<?php endforeach; wp_reset_postdata(); ?>
+					</div>
+				</div>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->

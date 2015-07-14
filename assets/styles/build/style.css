@@ -584,8 +584,9 @@ footer {
 .site-footer p.copyright {
   clear: both;
   margin-bottom: 0;
-  padding-bottom: 80px;
-  font-size: 14px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-size: 10px;
 }
 
 div.searchform {
@@ -599,6 +600,8 @@ div.searchform form {
 
 div.columns {
   padding-top: 20px;
+  width: 60%;
+  margin: 0 auto;
 }
 div.columns .oneoffour {
   width: 20%;
@@ -1230,6 +1233,48 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
     border-right: none;
   }
 }
+div.rappels {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+div.rappels div.rappel-cuisine {
+  width: 30%;
+  margin-right: 3%;
+}
+div.rappels div.rappel-cuisine h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  width: 80%;
+}
+div.rappels div.rappel-cuisine div.rappel-cuisine-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: url(assets/img/figs.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: #edc568;
+  clear: both;
+}
+div.rappels div.rappel-cuisine div.rappel-cuisine-img h3 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  background-color: white;
+}
+div.rappels div.rappel-cuisine div.rappel-cuisine-img h4 {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
 .post-list-container {
   width: 60%;
   margin: 0 auto;
@@ -1246,6 +1291,7 @@ div.post_categories ul {
 div.post_categories ul li {
   display: inline-block;
   width: 23%;
+  text-align: center;
 }
 div.post_categories ul li a {
   font-size: 14px;
@@ -1279,7 +1325,7 @@ div.post_categories h2 {
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  background-image: url(assets/img/logo_fab_square_small.png);
+  background: url(assets/img/logo_fab_square_small.png) no-repeat center center;
   background-color: #edc568;
 }
 .single-post-info h1 {
