@@ -29,7 +29,9 @@ get_header(); ?>
 							<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
 							</a>
 						<?php } else { ?>
+						<a href="<?php the_permalink() ?>">
 						<div class="no-thumbnail"></div>
+						</a>
 						<?php } ?>
 					<p class="category"><?php the_category('title_li='); ?></p>
 					<h1 class="post-title">

@@ -1242,6 +1242,7 @@ div.rappels {
 div.rappels div.rappel-cuisine {
   width: 30%;
   margin-right: 3%;
+  float: left;
 }
 div.rappels div.rappel-cuisine h2 {
   text-transform: uppercase;
@@ -1273,6 +1274,15 @@ div.rappels div.rappel-cuisine div.rappel-cuisine-img h4 {
   text-align: center;
   font-size: 14px;
   color: white;
+}
+div.rappels div.rappel-cuisine div.rappel-blog {
+  width: 70%;
+  float: left;
+}
+div.rappels div.rappel-cuisine div.rappel-blog h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  width: 80%;
 }
 
 .post-list-container {

@@ -6,6 +6,7 @@ div.rappels{
   div.rappel-cuisine{
     width: 30%;
     margin-right: 3%;
+    float: left;
     h2{
       text-transform: uppercase;
       border-bottom: 2px solid black;
@@ -36,6 +37,15 @@ div.rappels{
         text-align: center;
         font-size: 14px;
         color: white;
+      }
+    }
+    div.rappel-blog{
+      width:70%;
+      float: left;
+      h2{
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+        width: 80%;
       }
     }
   }
