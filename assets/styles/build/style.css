@@ -1,102 +1,1608 @@
-/*
-Error: Undefined variable: "$neutonregular".
-        on line 37 of assets/styles/partials/_blog.scss
-        from line 36 of assets/styles/style.scss
+@charset "UTF-8";
+/*!
+Theme Name: f&brfst
+Theme URI: https://github.com/colmoneill/f-bfs.fr
+Author: colmoneill
+Author URI: http://colm.be
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _mbbasetheme
+Domain Path: /languages/
+Tags:
 
-32: // Menus, Page and Post styles
-33: @import "partials/menus";
-34: @import "partials/page";
-35: @import "partials/calendars";
-36: @import "partials/blog";
-37: @import "partials/search";
-38: 
-39: // Page Templates
-40: 
-41: @import "partials/typography";
-42: 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-Backtrace:
-assets/styles/partials/_blog.scss:37
-assets/styles/style.scss:36
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
+ _mbbasetheme is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$neutonregular\".\A         on line 37 of assets/styles/partials/_blog.scss\A         from line 36 of assets/styles/style.scss\A \A 32: // Menus, Page and Post styles\A 33: @import \"partials/menus\";\A 34: @import \"partials/page\";\A 35: @import \"partials/calendars\";\A 36: @import \"partials/blog\";\A 37: @import \"partials/search\";\A 38: \A 39: // Page Templates\A 40: \A 41: @import \"partials/typography\";\A 42: "; }
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/*
+ * Mixin for easy media queries
+ * @include bp(tablet) { SCSS here };
+*/
+/*
+ * Mixin for clearfix
+ * @include clearfix;
+*/
+/*
+ * Mixin for basic CSS triangles
+ * @include triangle(up, #000, 50px)
+*/
+/*
+ * @font-face mixin
+ * Bulletproof font-face via Font Squirrel
+ * @include fontface('family', 'assets/fonts/', 'myfontname');
+ */
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+@font-face {
+  font-family: 'work_sanssemibold';
+  src: url("assets/fonts/WorkSans-SemiBold-webfont.eot");
+  src: url("assets/fonts/WorkSans-SemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-SemiBold-webfont.woff2") format("woff2"), url("assets/fonts/WorkSans-SemiBold-webfont.woff") format("woff"), url("assets/fonts/WorkSans-SemiBold-webfont.ttf") format("truetype"), url("assets/fonts/WorkSans-SemiBold-webfont.svg#work_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'work_sansregular';
+  src: url("assets/fonts/WorkSans-Regular-webfont.eot");
+  src: url("assets/fonts/WorkSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/WorkSans-Regular-webfont.woff2") format("woff2"), url("assets/fonts/WorkSans-Regular-webfont.woff") format("woff"), url("assets/fonts/WorkSans-Regular-webfont.ttf") format("truetype"), url("assets/fonts/WorkSans-Regular-webfont.svg#work_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neutonregular';
+  src: url("assets/fonts/Neuton-Regular-webfont.eot");
+  src: url("assets/fonts/Neuton-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Neuton-Regular-webfont.woff2") format("woff2"), url("assets/fonts/Neuton-Regular-webfont.woff") format("woff"), url("assets/fonts/Neuton-Regular-webfont.ttf") format("truetype"), url("assets/fonts/Neuton-Regular-webfont.svg#neutonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neutonitalic';
+  src: url("assets/fonts/Neuton-Italic-webfont.eot");
+  src: url("assets/fonts/Neuton-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Neuton-Italic-webfont.woff2") format("woff2"), url("assets/fonts/Neuton-Italic-webfont.woff") format("woff"), url("assets/fonts/Neuton-Italic-webfont.ttf") format("truetype"), url("assets/fonts/Neuton-Italic-webfont.svg#neutonitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neutonbold';
+  src: url("assets/fonts/Neuton-Bold-webfont.eot");
+  src: url("assets/fonts/Neuton-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Neuton-Bold-webfont.woff2") format("woff2"), url("assets/fonts/Neuton-Bold-webfont.woff") format("woff"), url("assets/fonts/Neuton-Bold-webfont.ttf") format("truetype"), url("assets/fonts/Neuton-Bold-webfont.svg#neutonbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: orange;
+  text-shadow: none;
+}
+
+::selection {
+  background: orange;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  margin-top: 0px;
+  background-image: url();
+}
+
+ul#menu-principal li {
+  margin-right: 10px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-footer {
+  color: white;
+  background-color: #8bdbd5;
+  text-align: center;
+  font-family: work_sansregular;
+  clear: both;
+}
+.site-footer p.copyright {
+  clear: both;
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  font-size: 14px;
+}
+
+div.searchform {
+  width: 100%;
+  height: 150px;
+  background-color: #f3f1f3;
+}
+div.searchform form {
+  padding-top: 60px;
+}
+
+div.columns {
+  padding-top: 20px;
+}
+div.columns .oneoffour {
+  width: 20%;
+  margin-left: 4%;
+  float: left;
+  padding-bottom: 80px;
+  padding-top: 40px;
+  text-align: left;
+  font-size: 14px;
+}
+div.columns lh {
+  font-family: work_sanssemibold;
+}
+div.columns ul {
+  margin: 0;
+  list-style-type: none;
+}
+div.columns ul li a {
+  text-decoration: none;
+  color: white;
+}
+div.columns ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+div.widget_recent_entries h2.widgettitle {
+  text-transform: lowercase;
+  font-size: 14px;
+  margin: 0;
+}
+
+span.edit-link {
+  visibility: hidden;
+  margin: 0 auto;
+  font-family: work_sansregular;
+  border-bottom: 1px dotted grey;
+}
+
+span.edit-link:after {
+  content: ' (for logged in users only)';
+}
+
+@media screen and (max-width: 800px) {
+  div.columns .oneoffour {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* ==========================================================================
+   Menus
+   ========================================================================== */
+.site-description {
+  display: none;
+}
+
+.site-title {
+  visibility: hidden;
+  height: 0;
+}
+
+div.languages {
+  position: absolute;
+  right: 15px;
+}
+div.languages ul {
+  list-style-type: none;
+}
+div.languages ul li {
+  float: left;
+  padding-left: 5px;
+}
+div.languages ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+header.site-header hr {
+  color: black;
+  background-color: black;
+  border: none;
+  height: 1px;
+  clear: both;
+  margin-top: -40px;
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+div.site-branding {
+  display: none;
+}
+
+.main-navigation {
+  clear: both;
+  float: left;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.menu-principal-container {
+  margin: 0 auto;
+}
+
+.main-navigation li {
+  width: 20%;
+  float: left;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 50px;
+  border-left: 1px solid grey;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  font-family: work_sansregular;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-navigation li:first-of-type {
+  margin-top: -10px;
+  background-image: url("assets/img/fblogovert.png");
+  background-size: 40%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.main-navigation li:first-of-type a {
+  text-indent: -20px;
+  color: white;
+  z-index: -4;
+  height: 100px;
+  width: 100%;
+}
+
+.main-navigation li:nth-of-type(2) {
+  border: none;
+  padding-bottom: 3px;
+}
+
+.main-navigation li:nth-of-type(2):after {
+  content: '—';
+}
+
+.main-navigation li:nth-of-type(3) {
+  padding-bottom: 3px;
+}
+
+.main-navigation li:nth-of-type(3):after {
+  content: '—';
+}
+
+.main-navigation li:nth-of-type(4) {
+  padding-bottom: 3px;
+}
+
+.main-navigation li:nth-of-type(4):after {
+  content: '—';
+}
+
+.main-navigation li:nth-of-type(5) {
+  border: none;
+}
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  left: 0;
+  position: absolute;
+  top: 1.5em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+
+/* Small menu */
+button.menu-toggle {
+  background-color: #008a91;
+  border: none;
+  padding: 10px;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
+  .main-navigation li:first-of-type {
+    background-size: 30%;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .main-navigation li {
+    width: 20%;
+    float: left;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+  }
+}
+@media screen and (max-width: 800px) {
+  div.scroll-back-to-top-wrapper.show {
+    visibility: hidden;
+  }
+
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+
+  .main-navigation ul {
+    display: none;
+  }
+
+  button.menu-toggle {
+    margin: 0 auto;
+  }
+
+  .site-title {
+    visibility: visible;
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url("assets/img/fblogovert.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .site-title a {
+    visibility: hidden;
+  }
+
+  .site-description {
+    display: block;
+  }
+
+  div.site-branding {
+    display: block;
+  }
+  div.site-branding h1 {
+    height: 300px;
+  }
+  div.site-branding h2 {
+    text-align: center;
+  }
+
+  .main-navigation li:first-of-type {
+    display: none;
+  }
+
+  .main-navigation {
+    background-color: white;
+    z-index: 5;
+  }
+
+  .main-navigation li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  div.languages {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.languages ul li {
+    float: right;
+    background-color: grey;
+    padding: 10px;
+    margin: 5px;
+    width: 25px;
+    text-align: center;
+  }
+  div.languages .current-lang {
+    background-color: #008a91;
+  }
+
+  nav#site-navigation.toggled {
+    height: 400px;
+  }
+  nav#site-navigation.toggled div.menu-principal-container {
+    margin-top: 20px;
+  }
+
+  .main-navigation li:nth-of-type(5):after {
+    content: '—';
+  }
+
+  .main-navigation li:nth-of-type(6):after {
+    content: '—';
+  }
+}
+@media screen and (max-width: 600px) {
+  div.site-branding h1 {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div.site-branding h1 {
+    clear: both;
+    height: 150px;
+  }
+
+  div.languages {
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/* ==========================================================================
+   Home Page Template
+   ========================================================================== */
+/* ==========================================================================
+   Blog pages
+   ========================================================================== */
+/* ==========================================================================
+   Posts and pages
+   ========================================================================== */
+article {
+  z-index: 2;
+  width: 50%;
+  float: left;
+  margin-left: 25%;
+  clear: right;
+}
+
+div.entry-content {
+  margin: 0 auto;
+  z-index: 3;
+}
+div.entry-content hr {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+div.entry-content p {
+  width: 70%;
+  margin: 0 auto;
+}
+div.entry-content p strong {
+  font-family: work_sansregular;
+}
+div.entry-content ul {
+  width: 70%;
+  margin: 0 auto;
+  font-family: work_sansregular;
+  list-style-type: none;
+}
+div.entry-content li {
+  font-size: 16px;
+}
+div.entry-content ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+div.entry-content .master-slider-parent {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+div.hero-container {
+  width: 100%;
+  clear: both;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+div.hero-container h1 {
+  display: inline-block;
+  text-align: center;
+  margin-top: 60px;
+  left: 0%;
+  right: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+}
+
+div.article-sidematter h1.entry-title {
+  display: none;
+}
+
+/* ==========================================================================
+   Side bar
+   ========================================================================== */
+p a.side-matter-ref sup {
+  font-size: 12px;
+  color: #edc568;
+}
+
+div#sidematter {
+  width: 20%;
+  float: left;
+  position: relative;
+  margin-left: -90px;
+  margin-top: -292px;
+}
+div#sidematter ol {
+  font-family: work_sansregular;
+}
+
+@media screen and (max-width: 1220px) {
+  article {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  div.entry-content hr {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  div.entry-content p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  div.entry-content p strong {
+    font-family: work_sansregular;
+  }
+  div.entry-content ul {
+    width: 70%;
+    margin: 0 auto;
+    font-family: work_sansregular;
+    list-style-type: none;
+  }
+
+  div.hero-container {
+    width: 100%;
+    margin-bottom: -100px;
+  }
+  div.hero-container img.hero {
+    width: 100%;
+    max-height: 250px;
+    z-index: 0 !important;
+  }
+
+  div.title {
+    background-color: white;
+    display: inline-block;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-bottom: 100px;
+  }
+  div.title h1 {
+    font-size: 20px;
+  }
+
+  div.article-sidematter h1.entry-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  article {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  div.entry-content hr {
+    width: 60%;
+  }
+  div.entry-content p {
+    width: 100%;
+  }
+  div.entry-content ul {
+    width: 90%;
+    margin-left: -20px;
+  }
+  div.entry-content footer.entry-footer {
+    display: none;
+  }
+
+  div#sidematter {
+    width: 90%;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin: 0 auto;
+  }
+  div#sidematter li {
+    margin-top: 0px !important;
+  }
+
+  div.title {
+    background-color: white;
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+div.calendars-container {
+  width: 100%;
+  clear: both;
+  height: 800px;
+  background-color: #fdf0f0;
+}
+
+div.calendars {
+  width: 90%;
+  clear: both;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+div.calendars div.title {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+div.calendars div.title h1 {
+  width: auto;
+}
+div.calendars .left-calendar {
+  width: 48%;
+  padding-right: 2%;
+  clear: both;
+  float: left;
+  margin-top: 20px;
+  border-right: 1px solid black;
+}
+div.calendars .right-calendar {
+  width: 48%;
+  float: right;
+  margin-top: 20px;
+}
+div.calendars .center-calendar {
+  border-bottom: 1px solid black;
+}
+div.calendars h2 {
+  text-align: center;
+  padding-bottom: 2px;
+  text-decoration: underline;
+}
+div.calendars p {
+  font-size: 14px;
+  text-align: center;
+  color: red;
+}
+div.calendars .reserv-button {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+div.calendars a {
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: red;
+  background-color: white;
+  padding: 5px;
+}
+
+div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  div.calendars-container {
+    height: 1370px;
+  }
+
+  div.calendars {
+    width: 95%;
+  }
+  div.calendars .left-calendar {
+    width: 100%;
+  }
+  div.calendars .right-calendar {
+    width: 100%;
+  }
+  div.calendars .left-calendar {
+    border-right: none;
+  }
+}
+.post-list-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+div.post_categories {
+  clear: both;
+  border-top: 1px solid #edc568;
+}
+div.post_categories ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+div.post_categories ul li {
+  display: inline-block;
+  width: 23%;
+}
+div.post_categories ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+div.post_categories ul li a::before {
+  content: '\2193 ';
+  color: #edc568;
+}
+div.post_categories h2 {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 40px 0 40px 0;
+}
+
+.single-post-info {
+  width: 18%;
+  margin-right: 2%;
+  float: left;
+}
+.single-post-info div.no-thumbnail {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url(assets/img/logo_fab_square_small.png);
+  background-color: #edc568;
+}
+.single-post-info h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.single-post-info h1 a {
+  font-family: neutonregular;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 14px;
+  color: black;
+}
+.single-post-info p.category {
+  margin: 0;
+}
+.single-post-info p.category a {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0;
+}
+.single-post-info p.category a:hover {
+  color: black;
+}
+.single-post-info p.category a::after {
+  content: " /";
+}
+.single-post-info hr {
+  padding: 0px;
+  margin: 0px;
+}
+.single-post-info p.tags {
+  margin: 0;
+  margin-bottom: 80px;
+}
+.single-post-info p.tags a {
+  font-size: 10px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  padding: 3px;
+  margin-right: 5px;
+}
+.single-post-info p.tags a:hover {
+  color: black;
+  border: 1px solid black;
+}
+.single-post-info .post-meta {
+  margin: 0;
+  font-family: neutonregular;
+}
+.single-post-info small {
+  font-family: neutonregular;
+}
+.single-post-info small a {
+  text-decoration: none;
+  color: #008a91;
+}
+
+article.post header h1 {
+  font-size: 24px;
+}
+article.post header .entry-meta {
+  font-family: neutonregular;
+  font-size: 16px;
+  border-bottom: 1px solid #008a91;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+article.post header .entry-meta a {
+  text-decoration: none;
+  color: #008a91;
+}
+
+.post-post-nav {
+  clear: both;
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #008a91;
+  margin-top: 20px;
+}
+
+header.search-page-header {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #008a91;
+}
+header.search-page-header h1 {
+  font-weight: normal;
+}
+header.search-page-header h1 span {
+  font-weight: bold;
+}
+
+span.screen-reader-text {
+  display: none;
+}
+
+input.search-field {
+  border: none;
+  padding: 5px;
+  color: grey;
+}
+
+input.search-submit {
+  background-color: #008a91;
+  border: none;
+  box-shadow: none;
+  padding: 5px;
+  text-transform: lowercase;
+  color: white;
+}
+
+html {
+  font-family: work_sansregular;
+}
+
+body {
+  font-family: work_sansregular;
+  font-size: 20px;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: WorkSans;
+}
+
+h1.entry-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: work_sanssemibold;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+div.entry-content {
+  font-family: neutonregular;
+}
+div.entry-content h2 {
+  font-family: work_sansregular;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+}
+div.entry-content h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+div.entry-content p {
+  font-size: 20px;
+}
+
+div.side-matter.side-matter-text {
+  font-style: italic;
+  font-size: 12px;
+}
+div.side-matter.side-matter-text li.side-matter-note {
+  font-size: 6px !important;
+}
+div.side-matter.side-matter-text li.side-matter-note:before {
+  content: "\2192 \20 ";
+}
+
+@media screen and (max-width: 800px) {
+  div.entry-content {
+    font-family: neutonregular;
+  }
+  div.entry-content h2 {
+    font-family: work_sansregular;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 16px;
+    text-align: center;
+  }
+  div.entry-content h3 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  div.entry-content p {
+    font-size: 20px;
+  }
+}
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+#comments {
+  display: none;
+}
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/* Gravity Forms */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

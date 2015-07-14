@@ -15,20 +15,25 @@ get_header(); ?>
 				<ul>
 					<?php wp_list_categories('title_li='); ?>
 				</ul>
-			</div>
 			<h2>ARTICLES RECENTS</h2>
+			</div>
 		<?php $myposts = get_posts('');
 		foreach($myposts as $post) :
 		setup_postdata($post); ?>
 			<div class="post-list">
 				<div class="single-post-info">
-					<?php the_post_thumbnail(); ?><br>
-					<?php the_category('title_li='); ?>
+
+					<?php if ( has_post_thumbnail() ) {
+						the_post_thumbnail('$url');
+					} else { ?>
+						<div class="no-thumbnail"></div>
+						<?php } ?>
+					<p class="category"><?php the_category('title_li='); ?></p>
 					<h1 class="post-title">
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 					</h1>
 					<hr>
-					<p><?php the_tags(); ?></p>
+					<p class="tags"><?php the_tags('' , ''); ?></p>
 					<!--
 					<p class="post-meta">Posted by <?php the_author(); ?></p>
 					<small><?php _mbbasetheme_posted_on(); ?></small>
