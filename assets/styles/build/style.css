@@ -1235,7 +1235,8 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
 }
 div.rappels {
   width: 60%;
-  margin: 0 auto;
+  float: left;
+  margin-left: 20%;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -1275,14 +1276,20 @@ div.rappels div.rappel-cuisine div.rappel-cuisine-img h4 {
   font-size: 14px;
   color: white;
 }
-div.rappels div.rappel-cuisine div.rappel-blog {
-  width: 70%;
+div.rappels div.rappel-blog {
+  width: 60%;
+  margin-left: 7%;
   float: left;
 }
-div.rappels div.rappel-cuisine div.rappel-blog h2 {
+div.rappels div.rappel-blog h2 {
+  width: 40%;
   text-transform: uppercase;
   border-bottom: 2px solid black;
-  width: 80%;
+}
+div.rappels div.rappel-blog div.single-post-info {
+  width: 30%;
+  margin-left: 0%;
+  margin-right: 2%;
 }
 
 .post-list-container {

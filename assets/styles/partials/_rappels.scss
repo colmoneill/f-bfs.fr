@@ -1,6 +1,9 @@
 div.rappels{
   width: $container;
-  margin: 0 auto;
+  float: left;
+  //idea
+  //margin-left: calc(100%-$container/2);
+  margin-left: 20%;
   margin-top: $bru*6;
   margin-bottom: $bru*6;
   div.rappel-cuisine{
@@ -39,14 +42,20 @@ div.rappels{
         color: white;
       }
     }
-    div.rappel-blog{
-      width:70%;
-      float: left;
-      h2{
-        text-transform: uppercase;
-        border-bottom: 2px solid black;
-        width: 80%;
-      }
+  }
+  div.rappel-blog{
+    width:60%;
+    margin-left: 7%;
+    float: left;
+    h2{
+      width: 40%;
+      text-transform: uppercase;
+      border-bottom: 2px solid black;
+    }
+    div.single-post-info{
+      width: 30%;
+      margin-left: 0%;
+      margin-right: 2%;
     }
   }
 }

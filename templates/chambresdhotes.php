@@ -74,6 +74,7 @@ get_header(); ?>
 					</div>
 					<div class="rappel-blog">
 						<h2>blog</h2>
+						<!-- LOOP -->
 						<?php $myposts = get_posts('posts_per_page=3');
 						foreach($myposts as $post) :
 						setup_postdata($post); ?>
@@ -82,28 +83,20 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() ) {
 										$thumb_id = get_post_thumbnail_id();
 										$thumb_url = wp_get_attachment_image_src($thumb_id,'medium', true); ?>
-											<a href="<?php the_permalink() ?>">
-											<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
-											</a>
+											<a href="<?php the_permalink() ?>"><div class='thumbnail' style='background:url(<?php echo $thumb_url[0]; ?>) no-repeat center center'></div></a>
 										<?php } else { ?>
-										<a href="<?php the_permalink() ?>">
-										<div class="no-thumbnail"></div>
-										</a>
-										<?php } ?>
+										<a href="<?php the_permalink() ?>"><div class="no-thumbnail"></div></a><?php } ?>
 									<p class="category"><?php the_category('title_li='); ?></p>
 									<h1 class="post-title">
 										<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 									</h1>
 									<hr>
 									<p class="tags"><?php the_tags('' , ''); ?></p>
-									<!--
-									<p class="post-meta">Posted by <?php the_author(); ?></p>
-									<small><?php _mbbasetheme_posted_on(); ?></small>
-								-->
 								</div>
 						<?php endforeach; wp_reset_postdata(); ?>
 					</div>
 				</div>
+			</div>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
