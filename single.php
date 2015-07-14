@@ -11,7 +11,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
+			<!--
+			<?php the_post_thumbnail( 'thumbnail', array( 'src' => $src, ) ); ?>
+		-->
+		<?php
+		if ( has_post_thumbnail() ) {
+			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+			echo '<div class="blog-hero" style="background: url(' . $large_image_url[0] . ') no-repeat center center;"></div>';
+		}
+		?>
 			<?php get_template_part( 'content', 'single' ); ?>
 
 			<div class="post-post-nav">

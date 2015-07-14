@@ -1407,6 +1407,12 @@ div.post_categories h2 {
   color: #008a91;
 }
 
+div.blog-hero {
+  height: 400px;
+  clear: both;
+  background-size: contain;
+}
+
 article.post header h1 {
   font-size: 24px;
 }
