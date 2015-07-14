@@ -1266,7 +1266,8 @@ div.post_categories h2 {
 
 .single-post-info {
   width: 18%;
-  margin-right: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
   float: left;
 }
 .single-post-info div.thumbnail {
