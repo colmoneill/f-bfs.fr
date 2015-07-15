@@ -1411,6 +1411,7 @@ div.blog-hero {
   height: 400px;
   clear: both;
   background-size: contain;
+  background-color: #edc568;
 }
 
 article.post header h1 {

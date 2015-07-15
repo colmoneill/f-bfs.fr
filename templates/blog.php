@@ -26,7 +26,7 @@ get_header(); ?>
 						$thumb_id = get_post_thumbnail_id();
 						$thumb_url = wp_get_attachment_image_src($thumb_id,'medium', true); ?>
 							<a href="<?php the_permalink() ?>">
-							<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center'></div>
+							<div class='thumbnail' style='background:url(<?php print $thumb_url[0]; ?>) no-repeat center center; background-size:cover;'></div>
 							</a>
 						<?php } else { ?>
 						<a href="<?php the_permalink() ?>">

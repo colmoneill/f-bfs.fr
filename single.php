@@ -19,6 +19,9 @@ get_header(); ?>
 			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
 			echo '<div class="blog-hero" style="background: url(' . $large_image_url[0] . ') no-repeat center center;"></div>';
 		}
+		else {
+			echo '<div class="blog-hero no-img"></div>';
+		}
 		?>
 			<?php get_template_part( 'content', 'single' ); ?>
 
