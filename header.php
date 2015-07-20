@@ -23,21 +23,14 @@
 	    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<div class="languages">
-			<ul><?php pll_the_languages(array('display_names_as'=> 'slug')); ?></ul>
-		</div>
-
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-branding"></div></a>
 			<button class="menu-toggle"><?php _e( 'menu', '_mbbasetheme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<ul><?php pll_the_languages(array('display_names_as'=> 'slug')); ?></ul>
+			<hr>
 		</nav><!-- #site-navigation -->
-	<!--<hr>-->
 	</header><!-- #masthead -->
-
 
 	<div id="content" class="site-content">

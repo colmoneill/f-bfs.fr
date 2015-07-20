@@ -2,76 +2,53 @@
    Menus
    ========================================================================== */
 
-.site-description {
-	display: none;
-}
-
-.site-title {
-	visibility: hidden;
-	height: 0;
-}
-
-div.languages{
-	position: absolute;
-	right: 15px;
-	ul{
-		list-style-type: none;
-		li{
-		float: left;
-		padding-left: 5px;
-		}
-		a{
-			text-decoration: none;
-			color: black;
-			font-size: 14px;
-		}
-	}
-}
-
 header.site-header{
 	hr{
 		color: black;
 		background-color: black;
-		border: none;
+		//border: none;
 		height: 1px;
 		clear: both;
 		margin-top: -$bru*2;
-		width: 78%;
+		width: 1300px;
 		margin: 0 auto;
 		margin-bottom: $bru*2;
 	}
 }
 
-div.site-branding{
-	display: none;
-}
-
 .main-navigation {
 	clear: both;
-	float: left;
-	width: 100%;
+	width: 1350px;
+	margin: 0 auto;
 	height: 100px;
 	padding-bottom: $bru;
 	padding-top: $bru*2;
 }
 
+div.site-branding{
+	height: 150px;
+	width: 20px;
+	background-color: blue;
+	float: left;
+}
+
 .main-navigation ul {
 	list-style: none;
-	margin: 0 auto;
-	padding-left: 0;
+	float: left;
 }
 
 .menu-principal-container{
 	margin: 0 auto;
+	width: 1100px;
 }
 
 .main-navigation li {
-	width: 20%;
 	float: left;
+	width: 300px;
 	padding-top: 0px;
 	padding-right:  0px;
-	padding-left: 50px;
-	border-left: 1px solid grey;
+	padding-left: 25px;
+	//border-left: 1px solid grey;
 }
 
 .main-navigation a {
@@ -85,50 +62,50 @@ div.site-branding{
 }
 
 .main-navigation li:first-of-type {
-	margin-top: -10px;
-	background-image: url('assets/img/fblogovert.png');
-	background-size: 40%;
-	background-position: right;
-	background-repeat: no-repeat;
-	height: 100px;
-	a{
-		text-indent: -20px;
-		color: white;
-		z-index: -4;
-		height: 100px;
-		width: 100%;
-	}
+	border-left: 1px solid grey;
+}
+
+.main-navigation li:first-of-type:after{
+	content: "―";
 }
 
 .main-navigation li:nth-of-type(2) {
-	border: none;
-	padding-bottom: 3px;
+	border-left: 1px solid grey;
 }
 
 .main-navigation li:nth-of-type(2):after {
-	content: '—';
+	content: "―";
 }
+
 .main-navigation li:nth-of-type(3) {
-	padding-bottom: 3px;
+	border-left: 1px solid grey;
 }
 
 .main-navigation li:nth-of-type(3):after {
-	content: '—';
+	content: "―";
 }
 
 .main-navigation li:nth-of-type(4) {
-	padding-bottom: 3px;
+	border-left: 1px solid grey;
 }
 
 .main-navigation li:nth-of-type(4):after {
-	content: '—';
 }
 
 .main-navigation li:nth-of-type(5) {
-	border: none;
+	border-left: 1px solid grey;
 }
 
 .main-navigation li:nth-of-type(6) {
+	border-left: 1px solid grey;
+}
+
+
+li.lang-item{
+	list-style: none;
+	width: 50px;
+	float: left;
+	clear: both;
 }
 
 
