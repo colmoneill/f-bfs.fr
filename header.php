@@ -28,7 +28,7 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><div class="site-branding"></div></a>
 			<button class="menu-toggle"><?php _e( 'menu', '_mbbasetheme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			<ul><?php pll_the_languages(array('display_names_as'=> 'slug')); ?></ul>
+			<ul class="lang"><?php pll_the_languages(array('display_names_as'=> 'slug')); ?><li class="search"><a>search</a></li></ul>
 			<hr>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

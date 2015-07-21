@@ -5,30 +5,30 @@
 header.site-header{
 	hr{
 		color: black;
+		width: 70%;
+		float: right;
 		background-color: black;
 		//border: none;
 		height: 1px;
 		clear: both;
-		margin-top: -$bru*2;
-		width: 1300px;
-		margin: 0 auto;
-		margin-bottom: $bru*2;
+		//margin-top: -$bru*2;
+		//margin-bottom: $bru*2;
 	}
 }
 
 .main-navigation {
 	clear: both;
-	width: 1350px;
+	width: 1000px;
 	margin: 0 auto;
 	height: 100px;
 	padding-bottom: $bru;
 	padding-top: $bru*2;
+	//outline: 1px solid blue;
 }
 
 div.site-branding{
 	height: 150px;
-	width: 20px;
-	background-color: blue;
+	width: 175px;
 	float: left;
 }
 
@@ -38,13 +38,13 @@ div.site-branding{
 }
 
 .menu-principal-container{
-	margin: 0 auto;
-	width: 1100px;
+	width: 750px;
+	float: left;
 }
 
 .main-navigation li {
 	float: left;
-	width: 300px;
+	width: 200px;
 	padding-top: 0px;
 	padding-right:  0px;
 	padding-left: 25px;
@@ -69,6 +69,10 @@ div.site-branding{
 	content: "―";
 }
 
+.main-navigation li.lang-item:first-of-type:after{
+	content: "-";
+}
+
 .main-navigation li:nth-of-type(2) {
 	border-left: 1px solid grey;
 }
@@ -83,6 +87,10 @@ div.site-branding{
 
 .main-navigation li:nth-of-type(3):after {
 	content: "―";
+}
+
+.main-navigation li.search:nth-of-type(3):after {
+	content: none;
 }
 
 .main-navigation li:nth-of-type(4) {
@@ -100,21 +108,32 @@ div.site-branding{
 	border-left: 1px solid grey;
 }
 
-
-li.lang-item{
+ul.lang{
+	padding: 0;
+	//outline: 1px solid green;
+}
+li.lang-item , li.search{
+	line-height: 16px;
 	list-style: none;
-	width: 50px;
+	width: 30px;
 	float: left;
 	clear: both;
+	a{
+	font-size: 10px;
+	font-weight: normal;
+	margin: 0;
+	}
 }
+
+
 
 li.lang-item:nth-of-type(2)::after{
 	content: none;
 }
 
+
 li.current-lang a{
 	border: 1px solid black;
-	padding: 3px;
 }
 
 
