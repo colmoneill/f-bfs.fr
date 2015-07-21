@@ -46,5 +46,11 @@
 
 <?php wp_footer(); ?>
 
+<script>
+$( "a.search" ).click(function() {
+  $( "div.menu-search" ).show( "slow" );
+});
+</script>
+
 </body>
 </html>

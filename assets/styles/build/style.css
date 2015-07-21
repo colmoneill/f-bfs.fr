@@ -657,12 +657,9 @@ span.edit-link:after {
    Menus
    ========================================================================== */
 header.site-header hr {
-  color: black;
-  width: 70%;
+  color: grey;
+  width: 780px;
   float: right;
-  background-color: black;
-  height: 1px;
-  clear: both;
 }
 
 .main-navigation {
@@ -797,9 +794,15 @@ svg.geomicon-search {
 }
 
 div.menu-search {
-  position: absolute;
   margin-top: 100px;
   text-align: right;
+}
+div.menu-search input {
+  width: 780px;
+  border: 1px solid grey;
+  color: lightgrey;
+  font-size: 14px;
+  height: 30px;
 }
 
 .main-navigation ul ul {

@@ -4,15 +4,9 @@
 
 header.site-header{
 	hr{
-		color: black;
-		width: 70%;
+		color: grey;
+		width: 780px;
 		float: right;
-		background-color: black;
-		//border: none;
-		height: 1px;
-		clear: both;
-		//margin-top: -$bru*2;
-		//margin-bottom: $bru*2;
 	}
 }
 
@@ -155,9 +149,17 @@ svg.geomicon-search{
 }
 
 div.menu-search{
-	position: absolute;
+	//display: none;
 	margin-top: 100px;
 	text-align: right;
+	input{
+		width: 780px;
+		border: 1px solid grey;
+		color: lightgrey;
+		font-size: 14px;
+		height: 30px;
+		//padding-left: 10px;
+	}
 }
 
 .main-navigation ul ul {
