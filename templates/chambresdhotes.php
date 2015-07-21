@@ -11,7 +11,7 @@ get_header(); ?>
 
 <style type="text/css">
 	div.site-branding{
-		background: url(<?php bloginfo('template_directory'); ?>/assets/img/fblogovert.png);
+		background: url(<?php bloginfo('template_directory'); ?>/assets/img/FBLOGOvert.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}

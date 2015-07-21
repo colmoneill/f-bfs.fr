@@ -8,6 +8,14 @@
 
 get_header(); ?>
 
+<style type="text/css">
+	div.site-branding{
+		background: url(<?php bloginfo('template_directory'); ?>/assets/img/FBLOGOjaune.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+</style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<div class="post-list-container">
