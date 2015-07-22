@@ -793,16 +793,22 @@ svg.geomicon-search {
   padding-left: 5px;
 }
 
-div.menu-search {
+div#menu-search {
   margin-top: 100px;
   text-align: right;
+  margin-right: 20px;
 }
-div.menu-search input {
-  width: 780px;
+div#menu-search input {
+  width: 760px;
+  clear: right;
   border: 1px solid grey;
   color: lightgrey;
   font-size: 14px;
   height: 30px;
+  text-align: center;
+}
+div#menu-search a.close-search {
+  float: right;
 }
 
 .main-navigation ul ul {
