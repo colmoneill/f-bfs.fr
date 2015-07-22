@@ -7,20 +7,29 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		<hr>
+		<h6 class="subtitle"><?php the_field('article_subtitle'); ?><h6>
 		<div class="entry-meta">
 			<?php _mbbasetheme_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<div class="recipe-sidebar">
+			<?php the_field('left_column_content'); ?>
+		</div>
+		<div class="the_article">
+			<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', '_mbbasetheme' ),
 				'after'  => '</div>',
 			) );
 		?>
+		</div>
+		<div id="sidematter" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

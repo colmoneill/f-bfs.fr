@@ -33,16 +33,17 @@ get_header(); ?>
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
 				<div class="article-sidematter">
-				<?php get_template_part( 'content', 'page' ); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
 
-				<?php if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-					return;
-				}
-				?>
-				<div id="sidematter" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+					<?php if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+						return;
+					}
+					?>
+					<div id="sidematter" class="widget-area" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+					</div>
 				</div>
-				</div>
+
 				<div class="calendars-container">
 					<div class="calendars no-detail-display">
 						<div class="title">

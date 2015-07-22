@@ -33,7 +33,7 @@ get_header(); ?>
 					echo '<div class="blog-hero no-img"></div>';
 				}
 				?>
-					<?php get_template_part( 'content', 'single' ); ?>
+				<?php get_template_part( 'content', 'single' ); ?>
 			</div><!-- container -->
 					<div class="post-post-nav">
 						<?php _mbbasetheme_post_nav(); ?>

@@ -1032,11 +1032,11 @@ button.menu-toggle {
 /* ==========================================================================
    Posts and pages
    ========================================================================== */
-article {
+article.page {
   z-index: 2;
-  width: 50%;
+  width: 60%;
   float: left;
-  margin-left: 25%;
+  margin: 0 auto;
   clear: right;
 }
 
@@ -1077,7 +1077,7 @@ div.entry-content .master-slider-parent {
 }
 
 div.container {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -1113,17 +1113,7 @@ div.article-sidematter h1.entry-title {
 p a.side-matter-ref sup {
   font-size: 12px;
   color: #edc568;
-}
-
-div#sidematter {
-  width: 20%;
-  float: left;
-  position: relative;
-  margin-left: -90px;
-  margin-top: -292px;
-}
-div#sidematter ol {
-  font-family: work_sansregular;
+  padding-left: 3px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -1298,9 +1288,8 @@ div.calendars.no-detail-display div.DOPBSPCalendar-sidebar {
   }
 }
 div.rappels {
-  width: 60%;
+  width: 1200px;
   float: left;
-  margin-left: 20%;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -1471,16 +1460,34 @@ div.post_categories h2 {
 }
 
 div.blog-hero {
-  height: 400px;
+  height: 500px;
   clear: both;
   background-size: contain;
   background-color: #edc568;
 }
 
+article.post {
+  width: 100%;
+}
+article.post header {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
 article.post header h1 {
-  font-size: 24px;
+  font-size: 32px;
+  font-family: neutonregular;
+  text-transform: uppercase;
+}
+article.post header hr {
+  color: black;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 article.post header .entry-meta {
+  display: none;
   font-family: neutonregular;
   font-size: 16px;
   border-bottom: 1px solid #008a91;
@@ -1491,6 +1498,82 @@ article.post header .entry-meta {
 article.post header .entry-meta a {
   text-decoration: none;
   color: #008a91;
+}
+article.post header h6.subtitle {
+  font-weight: normal;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+article.post div.recipe-sidebar {
+  font-family: work_sansregular;
+  width: 250px;
+  float: left;
+}
+article.post div.recipe-sidebar p {
+  width: 100%;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+article.post div.recipe-sidebar p.strong {
+  font-size: 12px;
+  font-weight: work_sanssemibold;
+}
+article.post div.recipe-sidebar li {
+  font-size: 12px;
+}
+article.post div.recipe-sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+article.post div.recipe-sidebar p:first-of-type {
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 16px;
+}
+article.post div.the_article {
+  width: 600px;
+  margin-left: 50px;
+  float: left;
+}
+article.post div.the_article p {
+  width: 100%;
+}
+article.post div.the_article img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+article.post div.the_article h6 {
+  font-family: work_sansregular;
+  margin: 0;
+  font-size: 10px;
+  color: grey;
+  margin-bottom: 20px;
+}
+article.post div#sidematter {
+  width: 200px;
+  float: left;
+}
+article.post div#sidematter ol {
+  visibility: hidden;
+}
+article.post div#sidematter ol p {
+  visibility: visible;
+  font-family: work_sanssemibold;
+  font-size: 12px;
+}
+article.post div#sidematter p::before {
+  content: '\2192  ';
+  color: black;
+}
+
+footer.entry-footer {
+  width: 100%;
+  clear: both;
 }
 
 div.post-post-nav {
