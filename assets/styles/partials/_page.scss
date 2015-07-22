@@ -63,6 +63,11 @@ div.entry-content{
 	}
 }
 
+div.container{
+	width: $container;
+	margin: 0 auto;
+}
+
 div.hero-container{
 	width: 100%;
 	clear: both;

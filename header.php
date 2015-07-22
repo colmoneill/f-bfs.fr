@@ -38,7 +38,6 @@
 						<input type="text" placeholder="search the site" value="<?php echo get_search_query(); ?>" name="s" id="s" />
 				</form>
 			</div>
-			<hr>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

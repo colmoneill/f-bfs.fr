@@ -206,6 +206,33 @@ div#menu-search{
 .main-navigation .current-menu-item a {
 }
 
+div.secondary-menu{
+	width: 780px;
+	float: right;
+	margin-right: 80px;
+	margin-top: -15px;
+	hr{
+		margin: 0;
+	}
+	ul{
+		margin: 0;
+		li{
+		display: inline-block;
+		padding-right: 80px;
+			a{
+				text-decoration: none;
+				color: black;
+				font-size: 14px;
+			}
+			a::before{
+				content: '\2192  ';
+				color: $orange;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
 /* Small menu */
 
 button.menu-toggle{

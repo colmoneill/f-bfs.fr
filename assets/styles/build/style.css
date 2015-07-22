@@ -834,6 +834,33 @@ div#menu-search a.close-search {
   display: block;
 }
 
+div.secondary-menu {
+  width: 780px;
+  float: right;
+  margin-right: 80px;
+  margin-top: -15px;
+}
+div.secondary-menu hr {
+  margin: 0;
+}
+div.secondary-menu ul {
+  margin: 0;
+}
+div.secondary-menu ul li {
+  display: inline-block;
+  padding-right: 80px;
+}
+div.secondary-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+div.secondary-menu ul li a::before {
+  content: '\2192  ';
+  color: #edc568;
+  font-size: 20px;
+}
+
 /* Small menu */
 button.menu-toggle {
   background-color: #008a91;
@@ -1045,6 +1072,11 @@ div.entry-content ul li:before {
 div.entry-content .master-slider-parent {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+div.container {
+  width: 60%;
+  margin: 0 auto;
 }
 
 div.hero-container {
@@ -1329,7 +1361,6 @@ div.rappels div.rappel-blog div.single-post-info {
 
 div.post_categories {
   clear: both;
-  border-top: 1px solid #edc568;
 }
 div.post_categories ul {
   list-style-type: none;

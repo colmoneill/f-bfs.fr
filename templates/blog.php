@@ -14,15 +14,24 @@ get_header(); ?>
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+	div.secondary-menu hr{
+		color: orange;
+	}
 </style>
 
+<div class="container">
+	<div class="secondary-menu">
+		<hr>
+			<ul>
+				<?php wp_list_categories('title_li='); ?>
+			</ul>
+		<hr>
+	</div>
+</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<div class="post-list-container">
 			<div class="post_categories">
-				<ul>
-					<?php wp_list_categories('title_li='); ?>
-				</ul>
 			<h2>ARTICLES RECENTS</h2>
 			</div>
 		<?php $myposts = get_posts('');
