@@ -21,10 +21,17 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="hero-container" style="background-image: url(<?php the_field('full_width_image'); ?>) ">
-							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<?php
+				if ( has_post_thumbnail() ) {
+					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+					echo '<div class="hero-container" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;">';
+				}
+				else {
+					echo '<div class="blog-hero no-img">';
+				}
+				?>
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
-
 				<div class="article-sidematter">
 				<?php get_template_part( 'content', 'page' ); ?>
 

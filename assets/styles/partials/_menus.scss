@@ -149,12 +149,14 @@ svg.geomicon-search{
 }
 
 div#menu-search{
+	display: none;
+	height: 100px;
 	margin-top: 100px;
 	text-align: right;
 	margin-right: 20px;
 	input{
 		width: 760px;
-		clear: right;
+		//clear: right;
 		border: 1px solid grey;
 		color: lightgrey;
 		font-size: 14px;
@@ -216,6 +218,7 @@ div.secondary-menu{
 	}
 	ul{
 		margin: 0;
+		padding: 0;
 		li{
 		display: inline-block;
 		padding-right: 80px;

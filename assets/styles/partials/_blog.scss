@@ -152,11 +152,12 @@ article.post{
 	}
 }
 
-.post-post-nav{
+div.post-post-nav{
+	h1{
+		display: none;
+	}
 	clear: both;
-	width: 50%;
 	margin: 0 auto;
-	border-top: 1px solid $petergreen;
 	margin-top: $bru;
 
 }
