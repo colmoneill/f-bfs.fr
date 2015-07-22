@@ -144,19 +144,6 @@ article.post{
 			margin-top: -$bru;
 			margin-bottom: $bru/2;
 			}
-		.entry-meta{
-			display: none;
-			font-family: $neuton;
-			font-size: 16px;
-			border-bottom: 1px solid $petergreen;
-			text-align: center;
-			padding-bottom: $bru;
-			margin-bottom: $bru*2;
-			a{
-				text-decoration: none;
-				color: $petergreen;
-				}
-			}
 		h6.subtitle{
 			font-weight: normal;
 			text-align: center;
@@ -169,6 +156,7 @@ article.post{
 		//margin-top: $bru*8;
 		font-family: $worksans;
 		width: 250px;
+		min-height: 1px;
 		float: left;
 		p{
 			width: 100%;
@@ -222,26 +210,101 @@ article.post{
 		}
 		ol p{
 			visibility: visible;
+			width: 100%;
 			font-family: $worksansbold;
 			font-size: 12px;
+			a{
+				color: $mustardyellow;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
 		}
 		p::before{
 			content: '\2192  ';
 			color: black;
 		}
 	}
+	div.entry-meta{
+		margin-top: $bru*2;
+		padding-top: $bru;
+		font-family: $worksans;
+		font-size: 12px;
+		border-top: 1px solid $petergreen;
+		padding-bottom: $bru/2;
+		a{
+			text-decoration: none;
+			color: grey;
+			}
+		}
 }
 
 footer.entry-footer{
-	width: 100%;
-	clear: both;
+	font-family: $worksans;
+	font-size: 12px;
+	text-align: left;
+	color: black;
+	a{
+		color: grey;
+		text-decoration: none;
+		border: 1px solid grey;
+		padding: 3px;
+		margin-right: 5px;
+	}
 }
 
 div.post-post-nav{
-	h1{
-		display: none;
-	}
 	clear: both;
+	width: 60%;
 	margin: 0 auto;
 	margin-top: $bru;
+	a{
+		text-decoration: none;
+		font-family: $neuton;
+		text-transform: uppercase;
+		color: black;
+		font-size: 13px;
+		line-height: 13px;
+		letter-spacing: 0.1em;
+	}
+	h3{
+		text-transform: capitalize;
+		color: grey;
+		font-size: 12px;
+		margin-bottom: 0px;
+	}
+	h4{
+		margin: 0;
+		margin-top: $bru/4;
+		text-transform: uppercase;
+		color: grey;
+		font-size: 12px;
+		text-decoration: none;
+	}
+	div.nav-previous{
+		width: 20%;
+		h3{
+			border-bottom: 1px solid $mustardyellow;
+		}
+		h3::before{
+			content: '\2190 ';
+			color: $mustardyellow;
+			font-size: 18px;
+			padding-right: 10px;
+		}
+	}
+
+	div.nav-next{
+		width: 20%;
+		h3{
+			border-bottom: 1px solid $mustardyellow;
+		}
+		h3::after{
+			content: '\2192 ';
+			color: $mustardyellow;
+			font-size: 18px;
+			padding-left: 10px;
+		}
+	}
 }
