@@ -1476,8 +1476,10 @@ article.post header {
 }
 article.post header h1 {
   font-size: 32px;
-  font-family: neutonregular;
+  font-family: neutonbold;
   text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.05em;
 }
 article.post header hr {
   color: black;
@@ -1762,6 +1764,84 @@ div.side-matter.side-matter-text li.side-matter-note:before {
    Comments
    ========================================================================== */
 #comments {
+  width: 500px;
+  margin-left: 300px;
+}
+#comments h2.comments-title {
+  display: none;
+}
+#comments ol.comment-list {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+#comments ol.comment-list li article {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  visibility: visible;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+}
+#comments ol.comment-list li article footer {
+  text-align: left;
+  color: black;
+}
+#comments ol.comment-list li article footer div.comment-author {
+  float: left;
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+#comments ol.comment-list li article footer div.comment-author a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: default;
+}
+#comments ol.comment-list li article footer div.comment-author img {
+  display: none;
+}
+#comments ol.comment-list li article footer div.comment-author span.says {
+  display: none;
+}
+#comments ol.comment-list li article footer div.comment-metadata {
+  float: left;
+  padding-left: 15px;
+}
+#comments ol.comment-list li article footer div.comment-metadata a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  cursor: default;
+}
+#comments ol.comment-list li article div.comment-content {
+  padding-top: 5px;
+  clear: both;
+  font-family: neutonregular;
+}
+#comments ol.comment-list li article div.comment-content a {
+  text-decoration: none;
+  color: grey;
+}
+#comments ol.comment-list li article div.comment-content i {
+  font-family: neutonitalic;
+  font-style: normal;
+}
+#comments ol.comment-list li article div.comment-content b {
+  font-family: neutonbold;
+  font-style: normal;
+}
+#comments ol.comment-list li article div.reply {
+  margin-bottom: 5px;
+}
+#comments ol.comment-list li article div.reply a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+  text-align: right;
+}
+#comments #respond h3 {
   display: none;
 }
 

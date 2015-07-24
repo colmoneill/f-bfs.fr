@@ -68,8 +68,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php comments_template(); ?>
-
 </div><!-- #comments -->
 
 <?php get_sidebar(); ?>

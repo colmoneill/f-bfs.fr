@@ -134,8 +134,10 @@ article.post{
 		margin-top: $bru*4;
 		h1{
 			font-size: 32px;
-			font-family: $neuton;
+			font-family: $neutonbold;
 			text-transform: uppercase;
+			font-weight: normal;
+			letter-spacing: 0.05em;
 			}
 		hr{
 			color: black;

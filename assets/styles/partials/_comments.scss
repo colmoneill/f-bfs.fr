@@ -3,8 +3,89 @@
    ========================================================================== */
 
 #comments{
-	display: none;
-}
+	width: 500px;
+	margin-left: 300px;
+	h2.comments-title{
+		display: none;
+	}
+	ol.comment-list{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	ol.comment-list li article{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		visibility: visible;
+		border-bottom: 1px solid black;
+		margin-top: $bru;
+		footer{
+			text-align: left;
+			color: black;
+			div.comment-author{
+				float: left;
+				border-right: 1px solid black;
+				padding-right: 10px;
+				a{
+					text-decoration: none;
+					color: black;
+					font-weight: normal;
+					font-size: 16px;
+					cursor: default;
+				}
+				img{
+					display: none;
+				}
+				span.says{
+					display: none;
+				}
+			}
+			div.comment-metadata{
+				float: left;
+				padding-left: 15px;
+				a{
+					text-decoration: none;
+					color: grey;
+					font-size: 14px;
+					cursor: default;
+				}
+				}
+			}
+		div.comment-content{
+			padding-top: $bru/4;
+			clear: both;
+			font-family: $neuton;
+			a{
+				text-decoration: none;
+				color: grey;
+			}
+			i{
+				font-family: $neutonitalic;
+				font-style: normal;
+			}
+			b{
+				font-family: $neutonbold;
+				font-style: normal;
+			}
+		}
+		div.reply{
+			margin-bottom: $bru/4;
+			a{
+				text-decoration: none;
+				color: grey;
+				font-size: 12px;
+				text-align: right;
+			}
+		}
+	}
+
+	#respond{
+			h3{
+				display: none;
+			}
+		}
+	}
 
 .comment-content a {
 	word-wrap: break-word;
