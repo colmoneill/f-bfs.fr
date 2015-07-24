@@ -84,7 +84,7 @@ add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 150, 150);
 
 function alter_comment_form_fields($fields){
-    $fields['author'] = '<p class="comment-form-author">' . ( '<span class="required">*</span>' : '' ) .
+    $fields['author'] = '<p class="comment-form-author">' . ( '<span class="required">*</span>' ) .
                     '<input id="author" name="author" type="text" placeholder="Name" /></p>';
     $fields['email'] = '<p class="comment-form-author">' . '<input id="email" name="email" type="text" placeholder="Email"/></p>';
     $fields['url'] = '';  //removes website field
