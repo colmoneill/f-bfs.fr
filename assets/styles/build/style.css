@@ -1876,6 +1876,7 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   font-size: 16px;
 }
 #comments #respond form textarea#comment {
+  margin-top: 20px;
   width: 585px;
   font-size: 18px;
 }
@@ -1886,10 +1887,12 @@ div.side-matter.side-matter-text li.side-matter-note:before {
 #comments #respond form input#author {
   width: 47%;
   font-family: work_sansregular;
+  float: left;
 }
 #comments #respond form input#email {
   width: 47%;
-  margin-left: 1%;
+  float: left;
+  margin-left: 1.5%;
   font-family: work_sansregular;
 }
 #comments #respond form input.submit {
