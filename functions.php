@@ -84,9 +84,9 @@ add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 150, 150);
 
 function alter_comment_form_fields($fields){
-    $fields['author'] = '<p class="comment-form-author">' . ( $req ? '<span class="required">*</span>' : '' ) .
-                    '<input id="author" name="author" type="text" placeholder="Name" value="' . esc_attr( $commenter['comment_author'] ) . ' ' . $aria_req . ' /></p>';
-    $fields['email'] = '<p class="comment-form-author">' . '<input id="email" name="email" type="text" placeholder="Email" ' . $aria_req . ' /></p>';
+    $fields['author'] = '<p class="comment-form-author">' . ( '<span class="required">*</span>' : '' ) .
+                    '<input id="author" name="author" type="text" placeholder="Name" /></p>';
+    $fields['email'] = '<p class="comment-form-author">' . '<input id="email" name="email" type="text" placeholder="Email"/></p>';
     $fields['url'] = '';  //removes website field
 		$fields['comment'] = '<p class="comment-form-comment">' . '<textarea id="comment" name="comment" required="required" aria-required="true" aria describedby="form-allowed-tags" rows="8" placeholder="Comment" /></p>';
     return $fields;
