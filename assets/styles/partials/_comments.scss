@@ -3,7 +3,8 @@
    ========================================================================== */
 
 #comments{
-	width: 500px;
+	width: 600px;
+	border-top: 1px solid black;
 	margin-left: 300px;
 	h2.comments-title{
 		display: none;
@@ -44,6 +45,8 @@
 			div.comment-metadata{
 				float: left;
 				padding-left: 15px;
+				width: 200px;
+				max-height: 30px;
 				a{
 					text-decoration: none;
 					color: grey;
@@ -90,6 +93,13 @@
 			padding-bottom: $bru/4;
 		}
 		form{
+			p.logged-in-as{
+				color: grey;
+				font-size: 14px;
+				a{
+					color: lightgrey;
+				}
+			}
 			p.comment-notes{
 				font-size: 12px;
 				color: grey;
@@ -105,17 +115,36 @@
 				//font-size: 14px;
 				font-family: $neuton;
 				padding: 5px;
+				font-size: 16px;
+			}
+			textarea#comment{
+				width: 585px;
+				font-size: 18px;
 			}
 			label{
 				color: grey;
 				font-size: 14px;
 			}
+			input#author{
+				width: 47%;
+				font-family: $worksans;
+			}
+			input#email{
+				width: 47%;
+				margin-left: 1%;
+				font-family: $worksans;
+			}
 			input.submit{
 				//float: right;
 				background-color: white;
-				color: grey;
+				color: lightgrey;
 				//font-size: 1px;
 				font-family: $worksans;
+				float: right;
+				margin-bottom: $bru;
+			}
+			input.submit:hover{
+				color: grey;
 			}
 		}
 	}

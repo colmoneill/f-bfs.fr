@@ -1764,7 +1764,8 @@ div.side-matter.side-matter-text li.side-matter-note:before {
    Comments
    ========================================================================== */
 #comments {
-  width: 500px;
+  width: 600px;
+  border-top: 1px solid black;
   margin-left: 300px;
 }
 #comments h2.comments-title {
@@ -1808,6 +1809,8 @@ div.side-matter.side-matter-text li.side-matter-note:before {
 #comments ol.comment-list li article footer div.comment-metadata {
   float: left;
   padding-left: 15px;
+  width: 200px;
+  max-height: 30px;
 }
 #comments ol.comment-list li article footer div.comment-metadata a {
   text-decoration: none;
@@ -1849,6 +1852,13 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   border-bottom: 1px dashed lightgrey;
   padding-bottom: 5px;
 }
+#comments #respond form p.logged-in-as {
+  color: grey;
+  font-size: 14px;
+}
+#comments #respond form p.logged-in-as a {
+  color: lightgrey;
+}
 #comments #respond form p.comment-notes {
   font-size: 12px;
   color: grey;
@@ -1863,15 +1873,34 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   color: grey;
   font-family: neutonregular;
   padding: 5px;
+  font-size: 16px;
+}
+#comments #respond form textarea#comment {
+  width: 585px;
+  font-size: 18px;
 }
 #comments #respond form label {
   color: grey;
   font-size: 14px;
 }
+#comments #respond form input#author {
+  width: 47%;
+  font-family: work_sansregular;
+}
+#comments #respond form input#email {
+  width: 47%;
+  margin-left: 1%;
+  font-family: work_sansregular;
+}
 #comments #respond form input.submit {
   background-color: white;
-  color: grey;
+  color: lightgrey;
   font-family: work_sansregular;
+  float: right;
+  margin-bottom: 20px;
+}
+#comments #respond form input.submit:hover {
+  color: grey;
 }
 
 .comment-content a {
