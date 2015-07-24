@@ -1796,7 +1796,7 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   text-decoration: none;
   color: black;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   cursor: default;
 }
 #comments ol.comment-list li article footer div.comment-author img {
@@ -1833,6 +1833,7 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   font-style: normal;
 }
 #comments ol.comment-list li article div.reply {
+  display: none;
   margin-bottom: 5px;
 }
 #comments ol.comment-list li article div.reply a {
@@ -1842,7 +1843,35 @@ div.side-matter.side-matter-text li.side-matter-note:before {
   text-align: right;
 }
 #comments #respond h3 {
-  display: none;
+  color: grey;
+  font-weight: normal;
+  font-size: 16px;
+  border-bottom: 1px dashed lightgrey;
+  padding-bottom: 5px;
+}
+#comments #respond form p.comment-notes {
+  font-size: 12px;
+  color: grey;
+}
+#comments #respond form p.form-allowed-tags {
+  font-size: 12px;
+  color: lightgrey;
+}
+#comments #respond form input, #comments #respond form textarea {
+  box-shadow: none;
+  border: 1px solid lightgrey;
+  color: grey;
+  font-family: neutonregular;
+  padding: 5px;
+}
+#comments #respond form label {
+  color: grey;
+  font-size: 14px;
+}
+#comments #respond form input.submit {
+  background-color: white;
+  color: grey;
+  font-family: work_sansregular;
 }
 
 .comment-content a {
