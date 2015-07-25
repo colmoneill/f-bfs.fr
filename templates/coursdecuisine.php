@@ -21,24 +21,62 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="hero-container">
-					<img class="hero" src="<?php the_field('full_width_image'); ?>" />
-				</div>
+				<?php
+				if ( has_post_thumbnail() ) {
+					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+					echo '<div class="hero-container" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;"></div>';
+				}
+				else {
+					echo '<div class="hero-container no-img"></div>';
+				}
+				?>
 
 				<div class="title">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
 
-				<div class="article-sidematter">
-				<?php get_template_part( 'content', 'page' ); ?>
+				<?php
 
-				<?php if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-					return;
-				}
-				?>
-				<div id="sidematter" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
-				</div>
+				// check for rows (parent repeater)
+				if( have_rows('module_de_presentation') ): ?>
+					<div id="to-do-lists">
+					<?php
+
+					// loop through rows (parent repeater)
+					while( have_rows('module_de_presentation') ): the_row(); ?>
+						<div>
+							<h3><?php the_sub_field('title_of_section'); ?></h3>
+							<h3><?php the_sub_field('subtitle_of_section'); ?></h3>
+							<?php
+							if( have_rows('gallery_of_section') ): ?>
+								<?php
+								// loop through rows (sub repeater)
+								while( have_rows('gallery_of_section') ): the_row();
+									// display each item as a list - with a class of completed ( if completed )
+									?>
+									<img src="<?php the_sub_field('gallery_images') ?>" class="we-ll-see" >
+								<?php endwhile; ?>
+							<?php endif; //if( get_sub_field('gallery_of_section') ): ?>
+							<?php if( have_rows('public_comments') ): ?>
+									<?php while( have_rows('public_comments') ): the_row(); ?>
+										<div class="side-comment">
+											<?php the_sub_field('visitors_comment') ?>
+											<?php the_sub_field('visitors_details') ?>
+											<?php the_sub_field('link_to_content') ?>
+										</div>
+									<?php endwhile; ?>
+								<?php endif; //if( get_sub_field('gallery_of_section') ): ?>
+
+							<p><?php the_sub_field('section_body_text'); ?></p>
+							<p><?php the_sub_field('technical_details'); ?></p>
+						</div>
+
+					<?php endwhile; // while( has_sub_field('to-do_lists') ): ?>
+					</div>
+				<?php endif; // if( get_field('to-do_lists') ): ?>
+
+			<?php endwhile; // end of the loop. ?>
+			<!--
 				</div>
 				<div class="calendars-container">
 					<div class="calendars no-detail-display">
@@ -53,7 +91,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-			<?php endwhile; // end of the loop. ?>
+			-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

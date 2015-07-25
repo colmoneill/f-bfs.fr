@@ -21,9 +21,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="container">
 				<?php while ( have_posts() ) : the_post(); ?>
-					<!--
-					<?php the_post_thumbnail( 'thumbnail', array( 'src' => $src, ) ); ?>
-				-->
 				<?php
 				if ( has_post_thumbnail() ) {
 					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );

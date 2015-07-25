@@ -2,8 +2,7 @@
 /**
  * Template Name: Chambres d'hôtes
  *
- * Displays content for content page layouts
- *
+
  * @package _mbbasetheme
  */
 
@@ -15,8 +14,19 @@ get_header(); ?>
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+	div.secondary-menu hr{
+		color: green;
+	}
 </style>
 
+<div class="container">
+	<div class="secondary-menu">
+		<hr>
+			<ul>
+			</ul>
+		<hr>
+	</div>
+</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -32,17 +42,8 @@ get_header(); ?>
 				?>
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
-				<div class="article-sidematter">
-					<?php get_template_part( 'content', 'page' ); ?>
 
-					<?php if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-						return;
-					}
-					?>
-					<div id="sidematter" class="widget-area" role="complementary">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-					</div>
-				</div>
+					<?php get_template_part( 'content', 'page' ); ?>
 
 				<div class="calendars-container">
 					<div class="calendars no-detail-display">
