@@ -1076,11 +1076,6 @@ div.entry-content .master-slider-parent {
   margin-bottom: 20px;
 }
 
-div.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 div.hero-container {
   width: 100%;
   clear: both;
@@ -1101,6 +1096,18 @@ div.hero-container h1 {
   font-size: 20px;
   background-color: white;
   padding: 10px;
+}
+
+div.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+div.container div#repeaters h3 {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 40px 0 40px 0;
 }
 
 div.article-sidematter h1.entry-title {

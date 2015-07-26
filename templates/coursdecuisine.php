@@ -17,34 +17,47 @@ get_header(); ?>
 	}
 </style>
 
+<div class="container">
+	<div class="secondary-menu">
+	<?php if ( have_rows('module_de_presentation') ): ?>
+		<hr>
+			<ul>
+				<?php while( have_rows('module_de_presentation') ): the_row(); ?>
+					<li><a href="#<?php the_sub_field('title_of_section'); ?>"> <?php the_sub_field('title_of_section'); ?></a></li>
+				<?php endwhile; ?>
+			</ul>
+		<hr>
+	<?php endif; ?>
+	</div>
+</div>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
+				<div
 				<?php
 				if ( has_post_thumbnail() ) {
 					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
-					echo '<div class="hero-container" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;"></div>';
+					echo ' class="hero-container" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;">';
 				}
 				else {
-					echo '<div class="hero-container no-img"></div>';
+					echo ' class="hero-container no-img">';
 				}
 				?>
-
-				<div class="title">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
-
+	<div class="container">
 				<?php
 
 				// check for rows (parent repeater)
 				if( have_rows('module_de_presentation') ): ?>
-					<div id="to-do-lists">
+					<div id="repeaters">
 					<?php
 
 					// loop through rows (parent repeater)
 					while( have_rows('module_de_presentation') ): the_row(); ?>
-						<div>
+						<div id="<?php the_sub_field('title_of_section'); ?>">
 							<h3><?php the_sub_field('title_of_section'); ?></h3>
 							<h3><?php the_sub_field('subtitle_of_section'); ?></h3>
 							<?php
@@ -76,6 +89,7 @@ get_header(); ?>
 				<?php endif; // if( get_field('to-do_lists') ): ?>
 
 			<?php endwhile; // end of the loop. ?>
+		</div>
 			<!--
 				</div>
 				<div class="calendars-container">
