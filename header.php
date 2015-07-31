@@ -14,7 +14,8 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/apple-touch-icon.png">
-	<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/main.min.js"></script>
+	<script type="text/JavaScript" src="<?php bloginfo('template_directory'); ?>/assets/js/plugins.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -31,7 +32,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			<ul class="lang">
 				<?php pll_the_languages(array('display_names_as'=> 'slug')); ?>
-				<li class="search"><a class="search" href="#" onclick="$('#menu-search').slideToggle();"><svg class="geomicon-search" data-icon="search" viewBox="0 0 32 32"><title>search icon</title><path d="M12 0 A12 12 0 0 0 0 12 A12 12 0 0 0 12 24 A12 12 0 0 0 18.5 22.25 L28 32 L32 28 L22.25 18.5 A12 12 0 0 0 24 12 A12 12 0 0 0 12 0 M12 4 A8 8 0 0 1 12 20 A8 8 0 0 1 12 4"></path></svg></a></li>
+				<li class="search"><a class="search" href="#"><svg class="geomicon-search" data-icon="search" viewBox="0 0 32 32"><title>search icon</title><path d="M12 0 A12 12 0 0 0 0 12 A12 12 0 0 0 12 24 A12 12 0 0 0 18.5 22.25 L28 32 L32 28 L22.25 18.5 A12 12 0 0 0 24 12 A12 12 0 0 0 12 0 M12 4 A8 8 0 0 1 12 20 A8 8 0 0 1 12 4"></path></svg></a></li>
 			</ul>
 			<div id="menu-search">
 				<form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">

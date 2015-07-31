@@ -106,7 +106,29 @@ div.article-sidematter{
 	}
 }
 
+/* ==========================================================================
+   Slider configs
+   ========================================================================== */
 
+	 div#slider_container{
+			position: relative;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 300px;
+			overflow: hidden;
+		}
+	 div.slides{
+		 cursor: move;
+		 position: absolute;
+		 left: 0px;
+		 top: 0px;
+		 width: 90%;
+		 margin-right: 20px;
+		 margin-left: 20px;
+		 height: 300px;
+		 overflow: hidden;
+	 }
 /* ==========================================================================
    Side bar
    ========================================================================== */

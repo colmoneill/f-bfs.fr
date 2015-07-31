@@ -31,6 +31,10 @@ get_header(); ?>
 	</div>
 </div>
 
+<!-- Jssor Slider Begin -->
+<!-- To move inline styles to css file/block, please specify a class name for each element. -->
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -60,16 +64,17 @@ get_header(); ?>
 						<div id="<?php the_sub_field('title_of_section'); ?>">
 							<h3><?php the_sub_field('title_of_section'); ?></h3>
 							<h3><?php the_sub_field('subtitle_of_section'); ?></h3>
-							<?php
-							if( have_rows('gallery_of_section') ): ?>
-								<?php
-								// loop through rows (sub repeater)
-								while( have_rows('gallery_of_section') ): the_row();
-									// display each item as a list - with a class of completed ( if completed )
-									?>
-									<img src="<?php the_sub_field('gallery_images') ?>" class="we-ll-see" >
-								<?php endwhile; ?>
+
+							<div id="slider_container">
+							<div class="slides" u="slides">
+							<?php	if( have_rows('gallery_of_section') ): ?>
+							<?php while( have_rows('gallery_of_section') ): the_row(); ?>
+							<div style="background: url(<?php the_sub_field('gallery_images') ?>")" class="we-ll-see" ></div>
+							<?php endwhile; ?>
 							<?php endif; //if( get_sub_field('gallery_of_section') ): ?>
+							</div>
+							</div>
+
 							<?php if( have_rows('public_comments') ): ?>
 									<?php while( have_rows('public_comments') ): the_row(); ?>
 										<div class="side-comment">
