@@ -1117,6 +1117,10 @@ div.hero-container h1 {
 .container div#repeaters div.module {
   clear: both;
 }
+.container div#repeaters div.module header.titles {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .container div.left-col {
   width: 250px;
   float: left;
@@ -1201,7 +1205,11 @@ div.hero-container h1 {
 .container div.the_article div.section_technical ul li {
   font-size: 14px;
 }
+.container div.the_article div.section_technical p {
+  font-size: 14px;
+}
 .container div#sidematter {
+  position: absolute;
   width: 200px;
   float: left;
 }
@@ -1237,18 +1245,17 @@ div#slider_container {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 150%;
+  width: 100%;
   height: 500px;
+  overflow: hidden;
 }
 
 div.slides {
+  width: 110%;
   cursor: move;
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 800px;
-  margin-right: 20px;
-  margin-left: 20px;
   height: 500px;
   overflow: hidden;
 }

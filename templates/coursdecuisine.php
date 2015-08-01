@@ -57,9 +57,11 @@ get_header(); ?>
 				<div id="repeaters">
 				<?php while( have_rows('module_de_presentation') ): the_row(); ?>
 					<div class="module" id="<?php the_sub_field('title_of_section'); ?>">
+						<header class="titles">
 						<h2><?php the_sub_field('title_of_section'); ?></h2>
 						<h4><?php the_sub_field('subtitle_of_section'); ?></h4>
-
+						</header>
+					
 					<?php	if( have_rows('gallery_of_section') ): ?>
 						<div id="slider_container">
 							<div class="slides" u="slides">
@@ -96,11 +98,12 @@ get_header(); ?>
 			<?php endif; ?>
 
 		<?php endwhile; ?>
-		<!--
+
+<!--
 		<div id="sidematter" class="widget-area" role="complementary">
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div>
-	-->
+-->
 <!--
 		<div class="calendars-container">
 			<div class="calendars no-detail-display">
