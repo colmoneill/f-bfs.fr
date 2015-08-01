@@ -19,7 +19,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="container">
+			<section class="container">
 				<?php while ( have_posts() ) : the_post(); ?>
 				<?php
 				if ( has_post_thumbnail() ) {
@@ -31,15 +31,14 @@ get_header(); ?>
 				}
 				?>
 				<?php get_template_part( 'content', 'single' ); ?>
-			</div><!-- container -->
+			</section><!-- container -->
 					<div class="post-post-nav">
 						<?php _mbbasetheme_post_nav(); ?>
 					</div>
 			<div class="container">
 					<?php comments_template(); ?>
-
-				<?php endwhile; // end of the loop. ?>
 			</div><!-- container -->
+			<?php endwhile; // end of the loop. ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
