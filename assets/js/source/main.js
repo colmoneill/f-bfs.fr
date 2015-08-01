@@ -37,6 +37,6 @@ jQuery(document).ready(function ($) {
 		$(window).bind("orientationchange", ScaleSlider);
 		//responsive code end
 });
-jQuery(document).ready(function ($) {
- ('#menu-search').slideToggle();"
- });
+//jQuery(document).ready(function ($) {
+// ('#menu-search').slideToggle();"
+// });

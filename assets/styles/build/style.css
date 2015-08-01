@@ -1102,12 +1102,128 @@ div.hero-container h1 {
   width: 1200px;
   margin: 0 auto;
 }
-.container div#repeaters h3 {
+.container div#repeaters h2 {
   text-align: center;
   font-size: 16px;
+  border-bottom: 3px solid black;
+  width: 20%;
+  margin-left: 40%;
+}
+.container div#repeaters h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.container div#repeaters div.module {
+  clear: both;
+}
+.container div.left-col {
+  width: 250px;
+  float: left;
+  min-height: 1px;
+}
+.container div.left-col p {
+  width: 100%;
+}
+.container div.left-col div.side-comment:first-of-type {
+  margin-top: 20px;
+}
+.container div.left-col div.side-comment {
+  outline: #d29c17 1px solid;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.container div.left-col div.side-comment a {
+  text-decoration: none;
+}
+.container div.left-col div.side-comment p.comment {
+  margin: 0;
+  color: black;
+  font-family: neutonitalic;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.container div.left-col div.side-comment p.comment::before {
+  content: '“ ';
+}
+.container div.left-col div.side-comment P.comment::after {
+  content: ' ”';
+}
+.container div.left-col div.side-comment p.visitor {
+  margin: 0;
+  color: black;
+  margin-top: 10px;
+  font-family: work_sanssemibold;
+  font-size: 10px;
+}
+.container div.the_article {
+  width: 600px;
+  margin-left: 50px;
+  float: left;
+}
+.container div.the_article p {
+  width: 100%;
+}
+.container div.the_article img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container div.the_article h6 {
+  font-family: work_sansregular;
+  margin: 0;
+  font-size: 10px;
+  color: grey;
+  margin-bottom: 20px;
+}
+.container div.the_article div.section_content {
+  font-family: neutonregular;
+}
+.container div.the_article div.section_technical {
+  font-family: work_sansregular;
+}
+.container div.the_article div.section_technical h3 {
+  font-family: work_sanssemibold;
   text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: none;
+}
+.container div.the_article div.section_technical ul {
+  list-style-type: none;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.container div.the_article div.section_technical ul li::before {
+  content: "— ";
+}
+.container div.the_article div.section_technical ul li {
+  font-size: 14px;
+}
+.container div#sidematter {
+  width: 200px;
+  float: left;
+}
+.container div#sidematter ol {
+  visibility: hidden;
+}
+.container div#sidematter ol p {
+  visibility: visible;
+  width: 100%;
+  font-family: work_sanssemibold;
+  font-size: 12px;
+}
+.container div#sidematter ol p a {
+  color: #d29c17;
+  text-decoration: none;
+}
+.container div#sidematter ol p a:hover {
   text-decoration: underline;
-  padding: 40px 0 40px 0;
+}
+.container div#sidematter p::before {
+  content: '\2192  ';
+  color: black;
 }
 
 div.article-sidematter h1.entry-title {
@@ -1532,12 +1648,9 @@ article.post header h6.subtitle {
 }
 article.post div.recipe-sidebar {
   font-family: work_sansregular;
-  width: 250px;
   min-height: 1px;
-  float: left;
 }
 article.post div.recipe-sidebar p {
-  width: 100%;
   font-size: 13px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1557,51 +1670,6 @@ article.post div.recipe-sidebar p:first-of-type {
   text-transform: uppercase;
   margin-top: 0px;
   font-size: 16px;
-}
-article.post div.the_article {
-  width: 600px;
-  margin-left: 50px;
-  float: left;
-}
-article.post div.the_article p {
-  width: 100%;
-}
-article.post div.the_article img {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-article.post div.the_article h6 {
-  font-family: work_sansregular;
-  margin: 0;
-  font-size: 10px;
-  color: grey;
-  margin-bottom: 20px;
-}
-article.post div#sidematter {
-  width: 200px;
-  float: left;
-}
-article.post div#sidematter ol {
-  visibility: hidden;
-}
-article.post div#sidematter ol p {
-  visibility: visible;
-  width: 100%;
-  font-family: work_sanssemibold;
-  font-size: 12px;
-}
-article.post div#sidematter ol p a {
-  color: #d29c17;
-  text-decoration: none;
-}
-article.post div#sidematter ol p a:hover {
-  text-decoration: underline;
-}
-article.post div#sidematter p::before {
-  content: '\2192  ';
-  color: black;
 }
 article.post div.entry-meta {
   margin-top: 40px;

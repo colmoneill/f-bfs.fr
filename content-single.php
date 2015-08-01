@@ -13,7 +13,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<div class="recipe-sidebar">
+		<div class="left-col recipe-sidebar">
 			<?php the_field('left_column_content'); ?>
 		</div>
 		<div class="the_article">

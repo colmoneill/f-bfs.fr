@@ -154,14 +154,12 @@ article.post{
 			margin-bottom: $bru*2;
 		}
 	}
+
 	div.recipe-sidebar{
 		//margin-top: $bru*8;
 		font-family: $worksans;
-		width: 250px;
 		min-height: 1px;
-		float: left;
 		p{
-			width: 100%;
 			font-size: 13px;
 			margin-top: $bru;
 			margin-bottom: $bru/2;
@@ -183,51 +181,7 @@ article.post{
 			font-size: 16px;
 		}
 	}
-	div.the_article{
-		width: 600px;
-		margin-left: 50px;
-		float: left;
-		p{
-			width: 100%;
-		}
-		img{
-			width: 100%;
-			height: auto;
-			margin-top: $bru;
-			margin-bottom: $bru/2;
-		}
-		h6{
-			font-family: $worksans;
-			margin: 0;
-			font-size: 10px;
-			color: grey;
-			margin-bottom: $bru;
-		}
-	}
-	div#sidematter{
-		width: 200px;
-		float: left;
-		ol{
-			visibility: hidden;
-		}
-		ol p{
-			visibility: visible;
-			width: 100%;
-			font-family: $worksansbold;
-			font-size: 12px;
-			a{
-				color: $mustardyellow;
-				text-decoration: none;
-			}
-			a:hover{
-				text-decoration: underline;
-			}
-		}
-		p::before{
-			content: '\2192  ';
-			color: black;
-		}
-	}
+
 	div.entry-meta{
 		margin-top: $bru*2;
 		padding-top: $bru;

@@ -55,10 +55,9 @@ get_header(); ?>
 			if( have_rows('module_de_presentation') ): ?>
 				<section class="container">
 				<div id="repeaters">
-				<?php
-				while( have_rows('module_de_presentation') ): the_row(); ?>
-					<div id="<?php the_sub_field('title_of_section'); ?>">
-						<h3><?php the_sub_field('title_of_section'); ?></h3>
+				<?php while( have_rows('module_de_presentation') ): the_row(); ?>
+					<div class="module" id="<?php the_sub_field('title_of_section'); ?>">
+						<h2><?php the_sub_field('title_of_section'); ?></h2>
 						<h4><?php the_sub_field('subtitle_of_section'); ?></h4>
 
 					<?php	if( have_rows('gallery_of_section') ): ?>
@@ -71,18 +70,25 @@ get_header(); ?>
 						</div>
 					<?php endif; ?>
 
+					<div class="left-col">
 						<?php if( have_rows('public_comments') ): ?>
-							<?php while( have_rows('public_comments') ): the_row(); ?>
-								<div class="side-comment">
-									<?php the_sub_field('visitors_comment') ?>
-									<?php the_sub_field('visitors_details') ?>
-									<?php the_sub_field('link_to_content') ?>
-								</div>
-							<?php endwhile; ?>
-						<?php endif; //if( get_sub_field('gallery_of_section') ): ?>
+								<?php while( have_rows('public_comments') ): the_row(); ?>
+									<div class="side-comment">
+										<a href="<?php the_sub_field('link_to_content') ?>">
+										<p class="comment"><?php the_sub_field('visitors_comment') ?></p>
+										<p class="visitor"><?php the_sub_field('visitors_details') ?></p>
+										</a>
+									</div>
+								<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
 
-						<p><?php the_sub_field('section_body_text'); ?></p>
-						<p><?php the_sub_field('technical_details'); ?></p>
+						<div class="the_article">
+							<div class="section_content"><?php the_sub_field('section_body_text'); ?></div>
+							<div class="section_technical"><?php the_sub_field('technical_details'); ?></div>
+						</div>
+
+
 					</div>
 				<?php endwhile; ?>
 				</div>
@@ -90,7 +96,11 @@ get_header(); ?>
 			<?php endif; ?>
 
 		<?php endwhile; ?>
-
+		<!--
+		<div id="sidematter" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		</div>
+	-->
 <!--
 		<div class="calendars-container">
 			<div class="calendars no-detail-display">

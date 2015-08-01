@@ -89,13 +89,131 @@ div.hero-container{
 	width: $container;
 	margin: 0 auto;
 	div#repeaters{
-		h3{
+		h2{
 			text-align: center;
 			font-size: 16px;
-			text-transform: uppercase;
-			text-decoration: underline;
-			padding: 2*$bru 0 $bru*2 0;
-
+			//text-decoration: underline;
+			//padding: 2*$bru 0 $bru*2 0;
+			border-bottom: 3px solid black;
+			width: 20%;
+			margin-left: 40%;
+		}
+		h4{
+			margin: 0;
+			//margin-top: -2*$bru;
+			text-align: center;
+			font-size: 12px;
+		}
+	div.module{
+		clear: both;
+		}
+	}
+	div.left-col{
+		width: 250px;
+		float: left;
+		min-height: 1px;
+		p{
+			width: 100%;
+		}
+		div.side-comment:first-of-type{
+			margin-top: $bru;
+		}
+		div.side-comment{
+			outline: $mustardyellow 1px solid;
+			margin: 5px;
+			margin-bottom: $bru;
+			padding: $bru/2;
+			a{
+				text-decoration: none;
+			}
+			p.comment{
+				margin: 0;
+				color: black;
+				font-family: $neutonitalic;
+				padding-bottom: $bru/2;
+				border-bottom: 1px solid black;
+			}
+			p.comment::before{
+				content: '“ ';
+			}
+			P.comment::after{
+				content: ' ”';
+			}
+			p.visitor{
+				margin: 0;
+				color: black;
+				margin-top: $bru/2;
+				font-family: $worksansbold;
+				font-size: 10px;
+			}
+		}
+	}
+	div.the_article{
+		width: 600px;
+		margin-left: 50px;
+		float: left;
+		p{
+			width: 100%;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			margin-top: $bru;
+			margin-bottom: $bru/2;
+		}
+		h6{
+			font-family: $worksans;
+			margin: 0;
+			font-size: 10px;
+			color: grey;
+			margin-bottom: $bru;
+		}
+		div.section_content{
+			font-family: $neuton;
+		}
+		div.section_technical{
+			font-family: $worksans;
+			h3{
+				font-family: $worksansbold;
+				text-transform: uppercase;
+				font-size: 14px;
+				padding-bottom: none;
+			}
+			ul{
+				list-style-type: none;
+				margin-left: -40px;
+				margin-top: -10px;
+				li::before{
+					content: "— "
+				}
+				li{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	div#sidematter{
+		width: 200px;
+		float: left;
+		ol{
+			visibility: hidden;
+		}
+		ol p{
+			visibility: visible;
+			width: 100%;
+			font-family: $worksansbold;
+			font-size: 12px;
+			a{
+				color: $mustardyellow;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+		}
+		p::before{
+			content: '\2192  ';
+			color: black;
 		}
 	}
 }
