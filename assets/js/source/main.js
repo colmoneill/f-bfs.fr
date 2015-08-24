@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 				//$SlideHeight: 500,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
 				$SlideSpacing: 20, 					                //Space between each slide in pixels
 				$DisplayPieces: 2,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-				$ParkingPosition: 0,                                //The offset position to park slide (this options applys only when slideshow disabled).
+				//$ParkingPosition: 0,                                //The offset position to park slide (this options applys only when slideshow disabled).
 
 				$ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
 						$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
@@ -19,14 +19,18 @@ jQuery(document).ready(function ($) {
 				}
 		};
 
-		var jssorslider1 = new $JssorSlider$("slider_container", options);
+		var jssorslider0 = new $JssorSlider$("slider_container0", options);
+		var jssorslider1 = new $JssorSlider$("slider_container1", options);
+		var jssorslider2 = new $JssorSlider$("slider_container2", options);
+		var jssorslider3 = new $JssorSlider$("slider_container3", options);
+		var jssorslider4 = new $JssorSlider$("slider_container4", options);
 
 		//responsive code begin
 		//you can remove responsive code if you don't want the slider scales while window resizes
 		function ScaleSlider() {
-				var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+				var parentWidth = jssorslider1.$Elmt.parentNode.clientWidth;
 				if (parentWidth)
-						jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1000	));
+						jssorslider1.$ScaleWidth(Math.min(parentWidth	));
 				else
 						window.setTimeout(ScaleSlider, 30);
 		}

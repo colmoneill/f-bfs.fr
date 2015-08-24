@@ -1241,7 +1241,7 @@ div.article-sidematter h1.entry-title {
 /* ==========================================================================
    Slider configs
    ========================================================================== */
-div#slider_container {
+div#slider_container0, #slider_container1, #slider_container2, #slider_container3, #slider_container4 {
   position: relative;
   top: 0px;
   left: 0px;
@@ -1251,7 +1251,7 @@ div#slider_container {
 }
 
 div.slides {
-  width: 110%;
+  width: 100%;
   cursor: move;
   position: absolute;
   left: 0px;

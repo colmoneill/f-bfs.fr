@@ -31,10 +31,6 @@ get_header(); ?>
 	</div>
 </section>
 
-<!-- Jssor Slider Begin -->
-<!-- To move inline styles to css file/block, please specify a class name for each element. -->
-
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -52,6 +48,7 @@ get_header(); ?>
 			</div>
 
 		<?php
+			$counter = 0;
 			if( have_rows('module_de_presentation') ): ?>
 				<section class="container">
 				<div id="repeaters">
@@ -61,10 +58,10 @@ get_header(); ?>
 						<h2><?php the_sub_field('title_of_section'); ?></h2>
 						<h4><?php the_sub_field('subtitle_of_section'); ?></h4>
 						</header>
-					
+
 					<?php	if( have_rows('gallery_of_section') ): ?>
 						<div id="slider_container">
-							<div class="slides" u="slides">
+							<div class="slides$counter++" u="slides">
 								<?php while( have_rows('gallery_of_section') ): the_row(); ?>
 									<div style="background: url(<?php the_sub_field('gallery_images') ?>)" class="the-slide we-ll-see" ></div>
 								<?php endwhile; ?>
