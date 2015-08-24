@@ -1115,97 +1115,98 @@ div.hero-container h1 {
   font-size: 12px;
 }
 .container div#repeaters div.module {
-  clear: both;
+  clear: left;
+  margin-bottom: 40px;
 }
 .container div#repeaters div.module header.titles {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.container div.left-col {
+.container div#repeaters div.module div.left-col {
   width: 250px;
   float: left;
   min-height: 1px;
 }
-.container div.left-col p {
+.container div#repeaters div.module div.left-col p {
   width: 100%;
 }
-.container div.left-col div.side-comment:first-of-type {
+.container div#repeaters div.module div.left-col div.side-comment:first-of-type {
   margin-top: 20px;
 }
-.container div.left-col div.side-comment {
+.container div#repeaters div.module div.left-col div.side-comment {
   outline: #d29c17 1px solid;
   margin: 5px;
   margin-bottom: 20px;
   padding: 10px;
 }
-.container div.left-col div.side-comment a {
+.container div#repeaters div.module div.left-col div.side-comment a {
   text-decoration: none;
 }
-.container div.left-col div.side-comment p.comment {
+.container div#repeaters div.module div.left-col div.side-comment p.comment {
   margin: 0;
   color: black;
   font-family: neutonitalic;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
-.container div.left-col div.side-comment p.comment::before {
+.container div#repeaters div.module div.left-col div.side-comment p.comment::before {
   content: '“ ';
 }
-.container div.left-col div.side-comment P.comment::after {
+.container div#repeaters div.module div.left-col div.side-comment p.comment::after {
   content: ' ”';
 }
-.container div.left-col div.side-comment p.visitor {
+.container div#repeaters div.module div.left-col div.side-comment p.visitor {
   margin: 0;
   color: black;
   margin-top: 10px;
   font-family: work_sanssemibold;
   font-size: 10px;
 }
-.container div.the_article {
+.container div#repeaters div.the_article {
   width: 600px;
   margin-left: 50px;
   float: left;
 }
-.container div.the_article p {
+.container div#repeaters div.the_article p {
   width: 100%;
 }
-.container div.the_article img {
+.container div#repeaters div.the_article img {
   width: 100%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.container div.the_article h6 {
+.container div#repeaters div.the_article h6 {
   font-family: work_sansregular;
   margin: 0;
   font-size: 10px;
   color: grey;
   margin-bottom: 20px;
 }
-.container div.the_article div.section_content {
+.container div#repeaters div.the_article div.section_content {
   font-family: neutonregular;
 }
-.container div.the_article div.section_technical {
+.container div#repeaters div.the_article div.section_technical {
   font-family: work_sansregular;
 }
-.container div.the_article div.section_technical h3 {
+.container div#repeaters div.the_article div.section_technical h3 {
   font-family: work_sanssemibold;
   text-transform: uppercase;
   font-size: 14px;
   padding-bottom: none;
 }
-.container div.the_article div.section_technical ul {
+.container div#repeaters div.the_article div.section_technical ul {
   list-style-type: none;
   margin-left: -40px;
   margin-top: -10px;
 }
-.container div.the_article div.section_technical ul li::before {
+.container div#repeaters div.the_article div.section_technical ul li::before {
   content: "— ";
 }
-.container div.the_article div.section_technical ul li {
+.container div#repeaters div.the_article div.section_technical ul li {
   font-size: 14px;
 }
-.container div.the_article div.section_technical p {
+.container div#repeaters div.the_article div.section_technical p {
   font-size: 14px;
 }
 .container div#sidematter {
@@ -1245,7 +1246,8 @@ div#slider_container0, #slider_container1, #slider_container2, #slider_container
   position: relative;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 160%;
+  margin-left: -30%;
   height: 500px;
   overflow: hidden;
 }
