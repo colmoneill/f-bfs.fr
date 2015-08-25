@@ -21,15 +21,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="container">
 				<?php while ( have_posts() ) : the_post(); ?>
-				<?php
-				if ( has_post_thumbnail() ) {
-					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
-					echo '<div class="blog-hero" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;"></div>';
-				}
-				else {
-					echo '<div class="blog-hero no-img"></div>';
-				}
-				?>
+					<?php if ( has_post_thumbnail() ) {
+           $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+           echo '<div class="blog-hero" style="background: url(' . $large_image_url[0] . ') no-repeat center center; background-size: cover;"></div>';
+          }
+          else {
+                  echo '<div class="blog-hero no-img"></div>';
+          }
+          ?>
+
 				<?php get_template_part( 'content', 'single' ); ?>
 			</section><!-- container -->
 					<div class="post-post-nav">

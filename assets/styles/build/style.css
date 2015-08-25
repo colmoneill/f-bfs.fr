@@ -1213,7 +1213,7 @@ div.the_article div.section_technical p {
 }
 
 div#sidematter {
-  position: absolute;
+  position: relative;
   width: 200px;
   float: left;
 }
@@ -1249,8 +1249,8 @@ div#slider_container0, #slider_container1, #slider_container2, #slider_container
   position: relative;
   top: 0px;
   left: 0px;
-  width: 160%;
-  margin-left: -30%;
+  width: 162%;
+  margin-left: -31%;
   height: 500px;
   overflow: hidden;
 }

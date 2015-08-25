@@ -205,7 +205,7 @@ div.the_article{
 }
 
 div#sidematter{
-	position: absolute;
+	position: relative;
 	width: 200px;
 	float: left;
 	ol{
@@ -244,8 +244,8 @@ div.article-sidematter{
 		position: relative;
 		top: 0px;
 		left: 0px;
-		width: 160%;
-		margin-left: -30%;
+		width: 162%;
+		margin-left: -31%;
 		height: 500px;
 		overflow: hidden;
 	}
