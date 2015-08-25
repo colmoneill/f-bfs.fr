@@ -85,6 +85,6 @@
 </div><!-- #primary -->
 
 
-			<div id="sidematter" class="widget-area" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
-			</div>
+<div id="content-sidematter" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+</div>

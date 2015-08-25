@@ -1238,10 +1238,6 @@ div#sidematter p::before {
   color: black;
 }
 
-div.article-sidematter h1.entry-title {
-  display: none;
-}
-
 /* ==========================================================================
    Slider configs
    ========================================================================== */
