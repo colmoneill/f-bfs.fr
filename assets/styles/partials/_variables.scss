@@ -75,6 +75,7 @@ $neutonbold: neutonbold;
 
 // Structure
 $pageWidth: 1000px;
+$container: 1200px;
 
 // Text Selection
 $selectionColor: orange;
@@ -86,9 +87,20 @@ $magenta: #fdf0f0;
 $babyblue: #f3f1f3;
 $boyblue: #8bdbd5;
 $petergreen: #008a91;
+$mustardyellow: #d29c17;
+$bloodred: #b94149;
+$orange: #edc568;
 
 $Worksans-bold: WorkSans-Semibold;
 
 $Worksans-reg: WorkSans;
 
 $bru: 20px;
+
+@media screen and (max-width: 1220px) {
+  $container: 1200px;
+}
+
+@media screen and (max-width: 800px) {
+  $container: 780px;
+}

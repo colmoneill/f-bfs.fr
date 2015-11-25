@@ -79,3 +79,16 @@ add_filter( 'wpseo_metabox_prio', 'mb_filter_yoast_seo_metabox' );
 function mb_filter_yoast_seo_metabox() {
 	return 'low';
 }
+
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 150, 150);
+
+function alter_comment_form_fields($fields){
+    $fields['author'] = '<p class="comment-form-author">' . '<input id="author" name="author" type="text" placeholder="Name" /></p>';
+    $fields['email'] = '<p class="comment-form-author">' . '<input id="email" name="email" type="text" placeholder="Email"/></p>';
+    $fields['url'] = '';  //removes website field
+		$fields['comment'] = '<p class="comment-form-comment">' . '<textarea id="comment" name="comment" required="required" aria-required="true" aria describedby="form-allowed-tags" rows="8" placeholder="Comment" /></p>';
+    return $fields;
+}
+
+add_filter('comment_form_default_fields','alter_comment_form_fields');

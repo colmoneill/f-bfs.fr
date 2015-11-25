@@ -85,9 +85,11 @@ module.exports = function(grunt) {
                 files: {
                     'assets/js/plugins.min.js': [
                         'assets/js/source/plugins.js',
+                        'assets/js/vendor/jquery-1.9.1.min.js',
                         'assets/js/vendor/navigation.js',
                         'assets/js/vendor/skip-link-focus-fix.js',
-                        // 'assets/js/vendor/yourplugin/yourplugin.js',
+                        'assets/js/vendor/jssor.js',
+                        'assets/js/vendor/jssor.slider.js',
                     ]
                 }
             },
@@ -129,7 +131,7 @@ module.exports = function(grunt) {
                     src : ['style.css', 'assets/js/*.js', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
                 },
                 options: {
-                    proxy: "local.dev",
+                    proxy: "http://localhost/wp2/",
                     watchTask: true
                 }
             }
@@ -164,6 +166,6 @@ module.exports = function(grunt) {
     grunt.renameTask('rsync', 'deploy');
 
     // register task
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'imagemin', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'imagemin', 'browserSync', 'watch']);
 
 };

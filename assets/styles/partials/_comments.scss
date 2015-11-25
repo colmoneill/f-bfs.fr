@@ -3,7 +3,154 @@
    ========================================================================== */
 
 #comments{
-	display: none;
+	width: 600px;
+	border-top: 1px solid black;
+	margin-left: 300px;
+	h2.comments-title{
+		display: none;
+	}
+	ol.comment-list{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+	}
+	ol.comment-list li article{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		visibility: visible;
+		border-bottom: 1px solid black;
+		margin-top: $bru;
+		footer{
+			text-align: left;
+			color: black;
+			div.comment-author{
+				float: left;
+				border-right: 1px solid black;
+				padding-right: 10px;
+				a{
+					text-decoration: none;
+					color: black;
+					font-weight: normal;
+					font-size: 14px;
+					cursor: default;
+				}
+				img{
+					display: none;
+				}
+				span.says{
+					display: none;
+				}
+			}
+			div.comment-metadata{
+				float: left;
+				padding-left: 15px;
+				width: 200px;
+				max-height: 30px;
+				a{
+					text-decoration: none;
+					color: grey;
+					font-size: 14px;
+					cursor: default;
+				}
+				}
+			}
+		div.comment-content{
+			padding-top: $bru/4;
+			clear: both;
+			font-family: $neuton;
+			a{
+				text-decoration: none;
+				color: grey;
+			}
+			i{
+				font-family: $neutonitalic;
+				font-style: normal;
+			}
+			b{
+				font-family: $neutonbold;
+				font-style: normal;
+			}
+		}
+		div.reply{
+			display: none;
+			margin-bottom: $bru/4;
+			a{
+				text-decoration: none;
+				color: grey;
+				font-size: 12px;
+				text-align: right;
+			}
+		}
+	}
+
+#respond{
+		h3{
+			color: grey;
+			font-weight: normal;
+			font-size: 16px;
+			border-bottom: 1px dashed lightgrey;
+			padding-bottom: $bru/4;
+		}
+		form{
+			p.logged-in-as{
+				color: grey;
+				font-size: 14px;
+				a{
+					color: lightgrey;
+				}
+			}
+			p.comment-notes{
+				font-size: 12px;
+				color: grey;
+			}
+			p.form-allowed-tags{
+				font-size: 12px;
+				color: lightgrey;
+			}
+			input, textarea{
+				box-shadow: none;
+				border: 1px solid lightgrey;
+				color: grey;
+				//font-size: 14px;
+				font-family: $neuton;
+				padding: 5px;
+				font-size: 16px;
+			}
+			textarea#comment{
+				margin-top: $bru;
+				width: 585px;
+				font-size: 18px;
+			}
+			label{
+				color: grey;
+				font-size: 14px;
+			}
+			input#author{
+				width: 47%;
+				font-family: $worksans;
+				float: left;
+			}
+			input#email{
+				width: 47%;
+				float: left;
+				margin-left: 1.5%;
+				font-family: $worksans;
+			}
+			input.submit{
+				//float: right;
+				background-color: white;
+				color: lightgrey;
+				//font-size: 1px;
+				font-family: $worksans;
+				float: right;
+				margin-bottom: $bru;
+			}
+			input.submit:hover{
+				color: grey;
+			}
+		}
+	}
 }
 
 .comment-content a {
