@@ -5,8 +5,8 @@ jQuery(document).ready(function ($) {
 				$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
 
 				//$ArrowKeyNavigation: true,   			            //Allows arrow key to navigate or not
-				$SlideWidth: 650,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
-				$SlideHeight: 500,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
+				$SlideWidth: 680,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
+				//$SlideHeight: 400,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
 				$SlideSpacing: 20, 					                //Space between each slide in pixels
 				$DisplayPieces: 2,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
 				//$ParkingPosition: 0,                                //The offset position to park slide (this options applys only when slideshow disabled).

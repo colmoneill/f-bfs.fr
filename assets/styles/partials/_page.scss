@@ -248,7 +248,7 @@ div.article-sidematter{
 		left: 0px;
 		width: 162%;
 		margin-left: -31%;
-		height: 500px;
+		height: 400px;
 		overflow: hidden;
 	}
  div.slides{
@@ -257,16 +257,16 @@ div.article-sidematter{
 	 position: absolute;
 	 left: 0px;
 	 top: 0px;
-	 height: 500px;
+	 height: 400px;
 	 overflow: hidden;
  }
  div.the-slide{
-	 background-color: transparent;
-	 background-repeat: no-repeat;
-	 background-attachment: scroll;
-	 background-position: center center;
-	 background-clip: border-box;
-	 background-origin: padding-box;
+	 background-color: transparent !important;
+	 background-repeat: no-repeat !important;
+	 background-attachment: scroll !important;
+	 background-position: center center !important;
+	 background-clip: border-box !important;
+	 background-origin: padding-box !important;
 	 background-size: cover !important;
  }
 /* ==========================================================================
