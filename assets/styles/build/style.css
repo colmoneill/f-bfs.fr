@@ -685,7 +685,7 @@ div.site-branding {
   float: left;
 }
 
-.menu-principal-container {
+.menu-principal-container, .menu-principal-en-container {
   width: 750px;
   float: left;
 }
@@ -696,9 +696,6 @@ div.site-branding {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 25px;
-}
-.main-navigation li .menu-item {
-  min-width: 294px;
 }
 
 .main-navigation a {

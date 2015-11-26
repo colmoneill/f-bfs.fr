@@ -34,7 +34,7 @@ div.site-branding{
 	float: left;
 }
 
-.menu-principal-container{
+.menu-principal-container, .menu-principal-en-container{
 	width: 750px;
 	float: left;
 }
@@ -46,11 +46,7 @@ div.site-branding{
 	padding-right:  0px;
 	padding-left: 25px;
 	//border-left: 1px solid grey;
-	.menu-item{
-		min-width: 294px;
-	}
 }
-
 .main-navigation a {
 	display: block;
 	text-decoration: none;
