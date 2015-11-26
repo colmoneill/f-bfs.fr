@@ -697,6 +697,9 @@ div.site-branding {
   padding-right: 0px;
   padding-left: 25px;
 }
+.main-navigation li .menu-item {
+  min-width: 294px;
+}
 
 .main-navigation a {
   display: block;

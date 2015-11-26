@@ -46,6 +46,9 @@ div.site-branding{
 	padding-right:  0px;
 	padding-left: 25px;
 	//border-left: 1px solid grey;
+	.menu-item{
+		min-width: 294px;
+	}
 }
 
 .main-navigation a {
