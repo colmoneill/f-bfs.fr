@@ -203,6 +203,13 @@ div.the_article{
 		p{
 			font-size: 14px;
 		}
+		div.end-separation{
+			width: 50%;
+			margin: 0 auto;
+			border-bottom: 1px solid grey;
+			margin-top: $bru*4;
+			margin-bottom: $bru*2;
+		}
 	}
 }
 

@@ -1212,6 +1212,13 @@ div.the_article div.section_technical ul li {
 div.the_article div.section_technical p {
   font-size: 14px;
 }
+div.the_article div.section_technical div.end-separation {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
 
 div#sidematter {
   position: relative;

@@ -71,7 +71,9 @@
 
 						<div class="the_article">
 							<div class="section_content"><?php the_sub_field('section_body_text'); ?></div>
-							<div class="section_technical"><?php the_sub_field('technical_details'); ?></div>
+							<div class="section_technical"><?php the_sub_field('technical_details'); ?>
+								<div class="end-separation"></div>
+							</div>
 						</div>
 
 
