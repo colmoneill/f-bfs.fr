@@ -261,8 +261,13 @@ div.article-sidematter{
 	 overflow: hidden;
  }
  div.the-slide{
-	 background-size: cover;
+	 background-color: transparent;
+	 background-repeat: no-repeat;
+	 background-attachment: scroll;
 	 background-position: center center;
+	 background-clip: border-box;
+	 background-origin: padding-box;
+	 background-size: cover !important;
  }
 /* ==========================================================================
    Side bar
