@@ -291,6 +291,15 @@ p{
 
 
 @media screen and (max-width: 1220px) {
+	.container{
+		width: 800px;
+	}
+
+	div.left-col{
+		width: 400px;
+		margin-left: 50px;
+	}
+
 	div#sidematter{
 	}
 

@@ -1289,6 +1289,15 @@ p a.side-matter-ref sup {
 }
 
 @media screen and (max-width: 1220px) {
+  .container {
+    width: 800px;
+  }
+
+  div.left-col {
+    width: 400px;
+    margin-left: 50px;
+  }
+
   article {
     width: 70%;
     margin-left: 15%;
