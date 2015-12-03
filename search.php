@@ -6,15 +6,13 @@
  */
 
 get_header(); ?>
-<section class="container">
+<section class="search-container">
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<div class="the_article">
 		<?php if ( have_posts() ) : ?>
-
-			<header class="search-page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', '_mbbasetheme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+					<hr>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -31,12 +29,11 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php _mbbasetheme_paging_nav(); ?>
-
+			</div><!--.the_acticle-->
 		<?php else : ?>
-
 			<?php get_template_part( 'content', 'none' ); ?>
-
 		<?php endif; ?>
+			</div><!--.the_acticle-->
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

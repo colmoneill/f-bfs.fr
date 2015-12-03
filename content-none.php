@@ -8,12 +8,9 @@
  */
 ?>
 
-
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', '_mbbasetheme' ); ?></h1>
-	</header><!-- .page-header -->
-
+		<h1 class="page-title"><?php _e( 'Nothing Found for that search', '_mbbasetheme' ); ?></h1>
+		<hr>
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
@@ -22,7 +19,6 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', '_mbbasetheme' ); ?></p>
-			<?php get_search_form(); ?>
 
 		<?php else : ?>
 

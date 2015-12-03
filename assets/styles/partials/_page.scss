@@ -15,8 +15,21 @@ body.blog {
 /* ==========================================================================
    Posts and pages
    ========================================================================== */
+div#page{
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
 
 div#primary{
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
+
+div.main-container{
+	min-height: 100%;
+	height: 100%;
 }
 
 article.page{
@@ -115,6 +128,12 @@ div.hero-container{
 			}
 		}
 	}
+}
+
+.search-container{
+	width: $container;
+	margin: 0 auto;
+	min-height: 500px;
 }
 
 div.left-col{
