@@ -125,6 +125,12 @@ div.blog-hero{
 	background-size: contain;
 	background-color: $orange;
 }
+div.blog-hero.no-img{
+	height: 500px;
+	clear: both;
+	background-size: contain;
+	background-color: $orange;
+}
 
 article.post{
 	width: 100%;

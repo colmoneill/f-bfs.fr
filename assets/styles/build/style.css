@@ -574,7 +574,6 @@ ul#menu-principal li {
 footer {
   width: 100%;
   text-align: center;
-  height: 500px;
 }
 
 .site-footer {
@@ -1117,6 +1116,13 @@ div.hero-container h1 {
   font-size: 20px;
   background-color: white;
   padding: 10px;
+}
+
+div.hero-container.no-img {
+  width: 100%;
+  clear: both;
+  height: 200px;
+  background-color: #008a91;
 }
 
 .container {
@@ -1667,6 +1673,13 @@ div.post_categories h2 {
 }
 
 div.blog-hero {
+  height: 500px;
+  clear: both;
+  background-size: contain;
+  background-color: #edc568;
+}
+
+div.blog-hero.no-img {
   height: 500px;
   clear: both;
   background-size: contain;
