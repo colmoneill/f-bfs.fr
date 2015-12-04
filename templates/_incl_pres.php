@@ -13,6 +13,11 @@
 	</div>
 </section>
 
+
+<div id="sidematter" class="widget-area" role="complementary">
+	<?php do_action( 'side_matter_list_notes' );?>
+</div>
+
 <!-- start the page with the featured image -->
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
@@ -76,7 +81,6 @@
 							</div>
 						</div>
 
-
 					</div>
 				<?php endwhile; ?>
 				</div>
@@ -85,8 +89,3 @@
 
 	</main><!-- #main -->
 </div><!-- #primary -->
-
-
-<div id="content-sidematter" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div>

@@ -43,4 +43,4 @@
     $.fn.positionRelative = function(top){
         return $(this).offsetRelative(top);
     };
-});
+}(jQuery));

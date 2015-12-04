@@ -63,7 +63,7 @@
 			</footer><!-- .entry-footer -->
 		</div>
 		<div id="sidematter" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			<?php do_action( 'side_matter_list_notes' );?>
 		</div>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

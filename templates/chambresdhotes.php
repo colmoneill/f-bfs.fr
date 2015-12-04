@@ -22,7 +22,6 @@ get_header(); ?>
 
 <?php require_once '_incl_pres.php'; ?>
 
-
 <div class="calendars-container">
 	<div class="calendars no-detail-display">
 		<div class="title">
