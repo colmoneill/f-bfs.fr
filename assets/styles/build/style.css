@@ -884,13 +884,34 @@ button.menu-toggle {
   }
 }
 @media screen and (max-width: 1220px) {
+  .main-navigation {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .main-navigation li {
-    width: 20%;
+    width: auto;
     float: left;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 20px;
     border-left: 1px solid grey;
+  }
+
+  .menu-principal-container, .menu-principal-en-container {
+    width: 560px;
+  }
+  .menu-principal-container .main-navigation li, .menu-principal-en-container .main-navigation li {
+    width: 250px;
+  }
+
+  div.site-branding {
+    width: 90px;
+  }
+
+  ul.lang {
+    float: right;
   }
 }
 @media screen and (max-width: 800px) {
@@ -905,6 +926,10 @@ button.menu-toggle {
 
   .main-navigation ul {
     display: none;
+  }
+
+  .main-navigation li {
+    max-width: 170px;
   }
 
   button.menu-toggle {
@@ -1289,9 +1314,8 @@ div#slider_container0, #slider_container1, #slider_container2, #slider_container
   position: relative;
   top: 0px;
   left: 0px;
-  width: 162%;
-  margin-left: -31%;
-  height: 400px;
+  width: 100%;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -1301,7 +1325,7 @@ div.slides {
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -1384,6 +1408,22 @@ p a.side-matter-ref sup {
   }
 }
 @media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  div.left-col {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  div.the_article {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
   article {
     width: 90%;
     margin-left: 5%;
@@ -1562,6 +1602,11 @@ div.rappels div.rappel-blog div.single-post-info {
   margin-right: 2%;
 }
 
+@media screen and (max-width: 1220px) {
+  div.rappels {
+    width: 100%;
+  }
+}
 .post-list-container {
   width: 60%;
   margin: 0 auto;

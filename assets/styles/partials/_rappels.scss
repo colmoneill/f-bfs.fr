@@ -57,3 +57,9 @@ div.rappels{
     }
   }
 }
+
+@media screen and (max-width: 1220px) {
+  div.rappels{
+  width: 100%;
+  }
+}

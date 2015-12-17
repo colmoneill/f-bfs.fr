@@ -283,9 +283,9 @@ div.article-sidematter{
 		position: relative;
 		top: 0px;
 		left: 0px;
-		width: 162%;
-		margin-left: -31%;
-		height: 400px;
+		width: 100%;
+		//margin-left: -31%;
+		height: 600px;
 		overflow: hidden;
 	}
  div.slides{
@@ -294,7 +294,7 @@ div.article-sidematter{
 	 position: absolute;
 	 left: 0px;
 	 top: 0px;
-	 height: 400px;
+	 height: 600px;
 	 overflow: hidden;
  }
  div.the-slide{
@@ -388,6 +388,19 @@ p{
 }
 
 @media screen and (max-width: 800px) {
+	.container{
+		width: 100%;
+	}
+	div.left-col{
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	div.the_article{
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 	article{
 		width: 90%;
 		margin-left: 5%;

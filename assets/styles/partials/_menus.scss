@@ -256,15 +256,32 @@ button.menu-toggle{
 }
 
 @media screen and (max-width: 1220px) {
+	.main-navigation{
+		width:100%;
+		margin-left: 3%;
+		margin-right: 3%;
+
+	}
 	.main-navigation li {
-		width: 20%;
+		width: auto;
 		float: left;
 		padding-top: 0px;
 		padding-right:  0px;
 		padding-left: 20px;
 		border-left: 1px solid grey;
 	}
-
+	.menu-principal-container, .menu-principal-en-container{
+		width: 560px;
+		.main-navigation li{
+			width: 250px;
+		}
+	}
+	div.site-branding{
+		width: 90px;
+	}
+	ul.lang{
+		float: right;
+	}
 
 
 }
@@ -281,6 +298,9 @@ button.menu-toggle{
 
 	.main-navigation ul {
 		display: none;
+	}
+	.main-navigation li {
+		max-width: 170px;
 	}
 	button.menu-toggle{
 		margin: 0 auto;
