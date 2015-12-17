@@ -258,12 +258,11 @@ button.menu-toggle{
 @media screen and (max-width: 1220px) {
 	.main-navigation{
 		width:100%;
-		margin-left: 3%;
-		margin-right: 3%;
+		margin: 0 auto;
 
 	}
 	.main-navigation li {
-		width: auto;
+		//width: auto;
 		float: left;
 		padding-top: 0px;
 		padding-right:  0px;
@@ -271,16 +270,19 @@ button.menu-toggle{
 		border-left: 1px solid grey;
 	}
 	.menu-principal-container, .menu-principal-en-container{
-		width: 560px;
+		width: 704px;
+	}
+	.menu-principal, .menu-principal-en{
 		.main-navigation li{
-			width: 250px;
+			width: 200px;
 		}
 	}
 	div.site-branding{
 		width: 90px;
+		margin-top: $bru;
 	}
 	ul.lang{
-		float: right;
+		//float: right;
 	}
 
 

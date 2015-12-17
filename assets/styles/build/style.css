@@ -886,12 +886,10 @@ button.menu-toggle {
 @media screen and (max-width: 1220px) {
   .main-navigation {
     width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 auto;
   }
 
   .main-navigation li {
-    width: auto;
     float: left;
     padding-top: 0px;
     padding-right: 0px;
@@ -900,18 +898,16 @@ button.menu-toggle {
   }
 
   .menu-principal-container, .menu-principal-en-container {
-    width: 560px;
+    width: 704px;
   }
-  .menu-principal-container .main-navigation li, .menu-principal-en-container .main-navigation li {
-    width: 250px;
+
+  .menu-principal .main-navigation li, .menu-principal-en .main-navigation li {
+    width: 200px;
   }
 
   div.site-branding {
     width: 90px;
-  }
-
-  ul.lang {
-    float: right;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 800px) {
