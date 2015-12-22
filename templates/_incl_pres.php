@@ -47,8 +47,7 @@
 						<h4><?php the_sub_field('subtitle_of_section'); ?></h4>
 						</header>
 
-					<?php
-					if( have_rows('gallery_of_section') ):
+					<?php if( have_rows('gallery_of_section') ):
 						echo ' <div id="slider_container';
 						print $counter++;
 						echo '">';
@@ -60,7 +59,6 @@
 							</div>
 						</div>
 					<?php endif; ?>
-
 					<div class="left-col">
 						<?php if( have_rows('public_comments') ): ?>
 								<?php while( have_rows('public_comments') ): the_row(); ?>
