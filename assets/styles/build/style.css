@@ -694,7 +694,7 @@ div.site-branding {
 
 .main-navigation li {
   float: left;
-  width: 200px;
+  width: 198px;
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 25px;
@@ -711,7 +711,7 @@ div.site-branding {
 }
 
 .main-navigation li.menu-item:first-of-type {
-  border-left: 1px solid #008a91;
+  border-left: 2px solid #008a91;
 }
 
 .main-navigation li.menu-item:first-of-type:after {
@@ -726,7 +726,7 @@ div.site-branding {
 }
 
 .main-navigation li.menu-item:nth-of-type(2) {
-  border-left: 1px solid #d29c17;
+  border-left: 2px solid #d29c17;
 }
 
 .main-navigation li.menu-item:nth-of-type(2):after {
@@ -735,7 +735,7 @@ div.site-branding {
 }
 
 .main-navigation li.menu-item:nth-of-type(3) {
-  border-left: 1px solid #b94149;
+  border-left: 2px solid #b94149;
 }
 
 .main-navigation li.menu-item:nth-of-type(3):after {
@@ -748,15 +748,15 @@ div.site-branding {
 }
 
 .main-navigation li.menu-item:nth-of-type(4) {
-  border-left: 1px solid #008a91;
+  border-left: 2px solid #008a91;
 }
 
 .main-navigation li.menu-item:nth-of-type(5) {
-  border-left: 1px solid #d29c17;
+  border-left: 2px solid #d29c17;
 }
 
 .main-navigation li.menu-item:nth-of-type(6) {
-  border-left: 1px solid #b94149;
+  border-left: 2px solid #b94149;
 }
 
 ul.lang {
@@ -1156,15 +1156,15 @@ div.hero-container.no-img {
 }
 .container div#repeaters h2 {
   text-align: center;
-  font-size: 16px;
-  border-bottom: 3px solid black;
+  font-size: 22px;
+  border-bottom: 2px solid black;
   width: 20%;
   margin-left: 40%;
 }
 .container div#repeaters h4 {
   margin: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 .container div#repeaters div.module {
   clear: left;
@@ -1339,7 +1339,7 @@ div.the-slide {
    Side bar
    ========================================================================== */
 p a.side-matter-ref sup {
-  font-size: 12px;
+  font-size: 15px;
   color: #edc568;
   padding-left: 3px;
 }

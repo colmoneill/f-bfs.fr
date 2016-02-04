@@ -41,7 +41,7 @@ div.site-branding{
 
 .main-navigation li {
 	float: left;
-	width: 200px;
+	width: 198px;
 	padding-top: 0px;
 	padding-right:  0px;
 	padding-left: 25px;
@@ -58,7 +58,7 @@ div.site-branding{
 }
 
 .main-navigation li.menu-item:first-of-type {
-	border-left: 1px solid $petergreen;
+	border-left: 2px solid $petergreen;
 }
 
 .main-navigation li.menu-item:first-of-type:after{
@@ -73,7 +73,7 @@ div.site-branding{
 }
 
 .main-navigation li.menu-item:nth-of-type(2) {
-	border-left: 1px solid $mustardyellow;
+	border-left: 2px solid $mustardyellow;
 }
 
 .main-navigation li.menu-item:nth-of-type(2):after {
@@ -82,7 +82,7 @@ div.site-branding{
 }
 
 .main-navigation li.menu-item:nth-of-type(3) {
-	border-left: 1px solid $bloodred;
+	border-left: 2px solid $bloodred;
 }
 
 .main-navigation li.menu-item:nth-of-type(3):after {
@@ -95,18 +95,18 @@ div.site-branding{
 }
 
 .main-navigation li.menu-item:nth-of-type(4) {
-	border-left: 1px solid $petergreen;
+	border-left: 2px solid $petergreen;
 }
 
 .main-navigation li.menu-item:nth-of-type(4):after {
 }
 
 .main-navigation li.menu-item:nth-of-type(5) {
-	border-left: 1px solid $mustardyellow;
+	border-left: 2px solid $mustardyellow;
 }
 
 .main-navigation li.menu-item:nth-of-type(6) {
-	border-left: 1px solid $bloodred;
+	border-left: 2px solid $bloodred;
 }
 
 ul.lang{

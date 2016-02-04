@@ -15,6 +15,9 @@ get_header(); ?>
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+	.container div#repeaters h2{
+		border-bottom: 2px solid #008a91;
+	}
 </style>
 
 <?php while ( have_posts() ) : the_post(); ?>

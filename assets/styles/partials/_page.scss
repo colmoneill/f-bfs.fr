@@ -117,10 +117,10 @@ div.hero-container.no-img{
 	div#repeaters{
 		h2{
 			text-align: center;
-			font-size: 16px;
+			font-size: 22px;
 			//text-decoration: underline;
 			//padding: 2*$bru 0 $bru*2 0;
-			border-bottom: 3px solid black;
+			border-bottom: 2px solid black;
 			width: 20%;
 			margin-left: 40%;
 		}
@@ -128,7 +128,7 @@ div.hero-container.no-img{
 			margin: 0;
 			//margin-top: -2*$bru;
 			text-align: center;
-			font-size: 12px;
+			font-size: 14px;
 		}
 	div.module{
 		clear: left;
@@ -311,7 +311,7 @@ div.article-sidematter{
 p{
 	a.side-matter-ref{
 		sup{
-		font-size: 12px;
+		font-size: 15px;
 		color: $orange;
 		padding-left: 3px;
 		}

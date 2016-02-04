@@ -15,6 +15,9 @@ get_header(); ?>
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
+	.container div#repeaters h2{
+		border-bottom: 2px solid #b94149;
+	}
 </style>
 
 	<div id="primary" class="content-area">
