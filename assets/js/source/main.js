@@ -1,19 +1,19 @@
 jQuery(document).ready(function ($) {
 		var options = {
-				$AutoPlay: true,
+				$AutoPlay: false,
 				$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slideshow is auto playing, default value is false
 				$ArrowKeyNavigation: true,   			            //Allows arrow key to navigate or not
-				$SlideWidth: 1200,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
-				$SlideHeight: 600,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
-				$SlideSpacing: 10, 					                //Space between each slide in pixels
+				$SlideWidth: 900,                                   //[Optional] Width of every slide in pixels, the default is width of 'slides' container
+				$SlideHeight: 700,                                  //[Optional] Height of every slide in pixels, the default is width of 'slides' container
+				$SlideSpacing: 50, 					                //Space between each slide in pixels
 				$DisplayPieces: 3,                                  //Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-				//$ParkingPosition: 0,                                //The offset position to park slide (this options applys only when slideshow disabled).
+				$ParkingPosition: 160,                                //The offset position to park slide (this options applys only when slideshow disabled).
 
 				$ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
 						$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
 						$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
 						$AutoCenter: 3,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-						$Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+						$Steps: 1,                                       //[Optional] Steps to go for each navigation request, default value is 1
 				}
 		};
 
